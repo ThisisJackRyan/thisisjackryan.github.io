@@ -1,0 +1,19 @@
+.nav{
+    justify-content: space-around;
+    align-items: center;
+    padding-right:40px;
+}
+
+.header{
+    background-color: rgb(34, 34, 57);
+}
+
+img{
+    width:120px;
+}
+
+.headerTitle{
+    align-items: center;
+    justify-content: center;
+    
+}
