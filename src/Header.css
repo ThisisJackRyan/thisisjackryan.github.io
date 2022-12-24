@@ -1,11 +1,14 @@
 .nav{
-    justify-content: space-around;
+    justify-content: space-evenly;
     align-items: center;
-    padding-right:40px;
+   
+     
 }
 
 .header{
     background-color: rgb(34, 34, 57);
+    font-family: "Lucida Console", "Courier New", monospace;
+    color:white;
 }
 
 img{
@@ -16,4 +19,7 @@ img{
     align-items: center;
     justify-content: center;
     
+}
+.headerTitle span:hover{
+    border-bottom: solid white 2px;
 }

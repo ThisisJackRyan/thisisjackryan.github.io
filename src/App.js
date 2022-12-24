@@ -1,25 +1,17 @@
 import logo from './logo.svg';
 import './App.css';
 
-function App() {
+export default function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+      <div className="flex">
+        <div className="x2">{/* this will be my name followed by a brief description of me using the "aspiring software developer" */}
+          <div>Jack Ryan</div>{/* I think big blocky-text or squared-text would look great  so far -- Orbitron,  Russo One, Teko, Bebas Neue look great for Jack Ryan on google fonts */}
+        </div>
+        <div className="x2">
+          <img src="" alt="" />{/* this could be a senior pick of me leaning up against a right wall*/}
+        </div>
+      </div>
     </div>
   );
 }
-
-export default App;

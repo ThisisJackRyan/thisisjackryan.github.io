@@ -10,7 +10,7 @@ export default function Header(){
                 <div className="x2">
                     <img src={logo} className="" alt="" />
                 </div>
-                <div className="x1 flex headerTitle">ThisisJackRyan.com</div>
+                <div className="x1 flex headerTitle"><span>ThisisJackRyan.com</span> </div>
                 <div className="flex nav x2">
                     <div>Page 1</div>
                     <div>Page 2</div>
@@ -18,5 +18,5 @@ export default function Header(){
                 </div>
             </div>
         </div>
-    )
+    );
 }
