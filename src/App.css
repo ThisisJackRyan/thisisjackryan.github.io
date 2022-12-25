@@ -1,4 +1,4 @@
-.App {
+/*.App {
   text-align: center;
 }
 
@@ -35,4 +35,26 @@
   to {
     transform: rotate(360deg);
   }
+}*/
+
+.nameTitle{
+  font-size: 4em;
+  justify-content: center;
+  align-items: center;
+  text-shadow: 3px 3px gray;
+ 
+}
+
+.nameTitle span{
+  border-bottom: dotted black 3px;
+  margin-bottom: 30px;
+}
+
+
+.quickDescription{
+    border:solid gray 2px;
+    border-radius: 5px;
+    text-align: center;
+    font-size: 2em;
+    
 }
