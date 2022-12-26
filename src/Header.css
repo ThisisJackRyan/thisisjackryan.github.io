@@ -8,7 +8,6 @@
 .header{
     background-color: rgba(34, 34, 57, .5);
     font-family: "Lucida Console", "Courier New", monospace;
-    color:white;
     position: fixed;
     width: 100%;
 }
@@ -22,6 +21,14 @@ img{
     justify-content: center;
     
 }
-.headerTitle span:hover{
+
+.link{
+    color:white;
+    text-decoration: none;
+}
+
+.link:hover{ 
     border-bottom: solid white 2px;
 }
+
+
