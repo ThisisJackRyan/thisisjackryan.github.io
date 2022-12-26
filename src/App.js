@@ -12,7 +12,8 @@ export default function App() {
           <div className="quickDescription">
             Hello My name is Jack Ryan and I am an aspiring Software developer
             I love camping, rock-climbing, and Coding.
-            I am 18 and am headed to K-state to Major in Computer Science 
+            I am 18 and am headed to K-state to Major in Computer Science.
+            I Currently work at a vr shop in downtown kansas City
            
           </div>
         </div>
