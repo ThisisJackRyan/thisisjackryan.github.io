@@ -37,11 +37,30 @@
   }
 }*/
 
-.nameTitle{
-  font-size: 4em;
+@font-face {
+    font-family: Play;
+    src: url("C:\fonts\Play\Play-Regular.ttf") format("opentype");
+}
+
+@font-face {
+  font-family: PlayBold;
+  font-weight: bold;
+  src: url("C:\fonts\Play\Play-Bold.ttf") format("opentype");
+}
+
+
+.article{
   justify-content: center;
   align-items: center;
-  text-shadow: 3px 3px gray;
+}
+
+.nameTitle{
+  font-size: 8em;
+  justify-content: center;
+  align-items: center;
+  text-shadow: 5px 5px gray;
+  font-family: Play;
+  color:white
  
 }
 
@@ -56,5 +75,16 @@
     border-radius: 5px;
     text-align: center;
     font-size: 2em;
+    margin:2%;
+    color: white;
     
+}
+
+.homePicture{
+  border: solid gray 2px;
+  border-radius: 5px;
+  margin:2%;
+}
+.homePicture img{
+    width:100%;
 }

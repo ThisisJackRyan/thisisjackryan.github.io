@@ -6,9 +6,11 @@
 }
 
 .header{
-    background-color: rgb(34, 34, 57);
+    background-color: rgba(34, 34, 57, .5);
     font-family: "Lucida Console", "Courier New", monospace;
     color:white;
+    position: fixed;
+    width: 100%;
 }
 
 img{
