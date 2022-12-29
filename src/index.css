@@ -1,12 +1,10 @@
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen','Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   font-size: 16px;
-  background-image: url(./BackGround.jpg);
+  background-image: url(./pages/images/BackGround.jpg);
   color:white;
 }
 
@@ -26,3 +24,138 @@ code {
 .x6{flex:6;}
 .x7{flex:7;}
 .x8{flex:8;}
+
+.container{
+  padding-top: 90px;
+}
+
+
+
+
+
+
+
+/*Header.js*/
+.nav{
+  justify-content: space-evenly;
+  align-items: center;
+ 
+   
+}
+
+.header{
+  background-color: rgba(34, 34, 57, .5);
+  font-family: "Lucida Console", "Courier New", monospace;
+  position: fixed;
+  width: 100%;
+}
+
+img{
+  width:120px;
+}
+
+.headerTitle{
+  align-items: center;
+  justify-content: center;
+  
+}
+
+.link{
+  color:white;
+  text-decoration: none;
+}
+
+.link:hover{ 
+  border-bottom: solid white 2px;
+}
+
+
+
+
+
+
+
+/*Home*/
+
+@font-face {
+  font-family: Play;
+  src: url("C:\fonts\Play\Play-Regular.ttf") format("opentype");
+}
+
+@font-face {
+font-family: PlayBold;
+font-weight: bold;
+src: url("C:\fonts\Play\Play-Bold.ttf") format("opentype");
+}
+
+
+.article{
+justify-content: center;
+align-items: center;
+}
+
+.nameTitle{
+font-size: 8em;
+justify-content: center;
+align-items: center;
+text-shadow: 5px 5px gray;
+font-family: Play;
+color:white;
+
+}
+
+.nameTitle span{
+border-bottom: dotted black 3px;
+margin-bottom: 30px;
+}
+
+
+.quickDescription{
+  border:solid gray 2px;
+  border-radius: 5px;
+  text-align: center;
+  font-size: 2em;
+  margin:2%;
+  color: white;
+  background-color: rgba(0,0,0,.7);
+  
+  
+}
+
+.homePicture{
+border: solid gray 2px;
+border-radius: 5px;
+margin:2%;
+}
+.homePicture img{
+  width:100%;
+}
+
+
+
+
+
+
+
+/*GoFundMe*/
+
+.funFact{
+  justify-content: center;
+  font-size: 2em;
+  font-size: 4em;
+  align-items: center;
+  text-shadow: 5px 5px gray;
+  font-family: Play;
+  color:white;
+
+}
+
+.quickFunFact{
+  border:solid gray 2px;
+  border-radius: 5px;
+  text-align: center;
+  font-size: 2em;
+  margin:2%;
+  color: white;
+  background-color: rgba(0,0,0,.7);
+}

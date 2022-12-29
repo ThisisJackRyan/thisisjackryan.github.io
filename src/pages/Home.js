@@ -1,4 +1,4 @@
-import PictureOfJack from "./PictureOfJackRyan.jpg"
+import PictureOfJack from "./images/PictureOfJackRyan.jpg"
 import React from "react"
 
 

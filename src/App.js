@@ -1,10 +1,9 @@
 import React from "react"
-import './App.css';
 import Header from "./Header"
-import Home from "./Home";
-import GoFundMe from "./GoFundMe";
-import Contact from "./Contact";
-import Projects from "./Projects"
+import Home from "./pages/Home";
+import GoFundMe from "./pages/GoFundMe";
+import Contact from "./pages/Contact";
+import Projects from "./pages/Projects"
 import {Route, Routes} from 'react-router-dom';
 
 
