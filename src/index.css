@@ -159,3 +159,23 @@ margin:2%;
   color: white;
   background-color: rgba(0,0,0,.7);
 }
+
+.arrow{
+  font-size: 8em;
+  align-items: center;
+  justify-content: center;
+
+}
+
+#gofundmelink {
+  font-size: 4em;
+  justify-content: center;
+ 
+}
+#gofundmelink .link {
+  margin-bottom:2px;
+}
+
+#gofundmelink .link:hover{
+  margin-bottom: 0px;
+}
