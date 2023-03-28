@@ -4,7 +4,7 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   font-size: 16px;
-  background-image: url(./pages/images/BackGround.jpg);
+  background-color: blue;
   color:white;
 }
 
