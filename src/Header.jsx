@@ -7,7 +7,7 @@ export default function Header(){
     return (
         <div className="header">
             <div className="flex">
-                <div className="x2">
+                <div className="x2 headerPic">
                     <img src={logo} className="" alt="" />
                 </div>
                 <div className="x1 flex headerTitle"><Link className="link" to="/">ThisisJackRyan.com</Link> </div>

@@ -4,16 +4,18 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   font-size: 16px;
-  background-color: blue;
+  background-image: url("./pages/images/BackGround.jpg");
   color:white;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
-}
 
-.flex{display:flex;}
+.flex{display: flex;}
+.flex.right{justify-content: right;}
+.flex.center{justify-content: center;}
+.flex.left{justify-content: left;}
+.flex.top{align-items: start;}
+.flex.middle{align-items: center};
+.flex.bottom{align-items: end;}
 
 
 .x1{flex:1;}
@@ -29,6 +31,9 @@ code {
   padding-top: 90px;
 }
 
+img{
+  width: 100%;
+}
 
 
 
@@ -50,7 +55,7 @@ code {
   width: 100%;
 }
 
-img{
+.headerPic img{
   width:120px;
 }
 
@@ -76,8 +81,8 @@ img{
 
 
 /*Home*/
-
-@font-face {
+/*this doesn't work on school mac */
+/*@font-face {
   font-family: Play;
   src: url("C:\fonts\Play\Play-Regular.ttf") format("opentype");
 }
@@ -86,7 +91,7 @@ img{
 font-family: PlayBold;
 font-weight: bold;
 src: url("C:\fonts\Play\Play-Bold.ttf") format("opentype");
-}
+}*/
 
 
 .article{
@@ -178,4 +183,38 @@ margin:2%;
 
 #gofundmelink .link:hover{
   margin-bottom: 0px;
+}
+
+
+
+/*Progects.jsx*/
+.LinkToGit a {
+  color:white;
+  text-decoration: none;
+}
+.LinkToGit{
+  font-family: "Lucida Console", "Courier New", monospace;
+}
+
+.LinkToGit :hover{
+  color:gray;
+}
+
+.TitleOfProgect{
+  font-size: 2em;
+  text-align: center;
+}
+
+.MarginShovePastHeader{
+  padding-top:100px;
+}
+
+.ReadMe{
+  font-family: "Lucida Console", "Courier New", monospace;
+  margin:3em;
+  text-align: center;
+  font-size: 1em;
+  border:solid gray 2px;
+  border-radius: 5px;
+  background-color: rgba(0,0,0,.7);
 }
