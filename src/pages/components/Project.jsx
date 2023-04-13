@@ -7,7 +7,7 @@ const Project = ({projects}) => {
                 <div className="flex">
                     <div className="x2">
                         <div className="flex center TitleOfProject LinkToGit">
-                            <a href="https://github.com/ThisisJackRyan/FSVR-Changing-Arena" target="_blank" rel="noreferrer">{projects.name}</a>
+                            <a href={projects.gitHub} target="_blank" rel="noreferrer">{projects.name}</a>
                         </div>
                         
                     </div>
@@ -15,7 +15,7 @@ const Project = ({projects}) => {
                 </div>
                 <div className="flex">
                     <div className="x2">
-                        <img src={projects.image} alt="" />
+                        <img src={projects.img} alt={projects.name} onError={(e) => console.log(e, e.message)} />
                     </div>
                     <div className="ReadMe x3 flex center middle">
                         <div>
