@@ -1,15 +1,43 @@
-import React from 'react';
+import React, { useState } from 'react';
 import backgroundImage from './images/Cube.jpg';
-import style from "./Projects.module.css";
-import vertigoImage from "./images/vertigo.avif"
+//import vertigoImage from "./images/vertigo.avif"
+import Project from './components/Project';
+
+
+
 
 
 
 function Projects(){
-    return(
+    const mainProjects = {
+        "Projects": [
+            {
+                "name": "FSVR Changing Arena",
+                "image": "./images/vertigo.avif",
+                "gitHub": "https://github.com/ThisisJackRyan/FSVR-Changing-Arena",
+                "video": null,
+                "Descriptions":["At FlipSwitch VR we use a software called Haze, which host our games and sends the data out to the other headsets. The goal of this program was to move the Players and their respective machineGuids to the other arena.", 'The part I enjoy about this simple but functional code is that it is my first "Real Life" example of how you can optimize your life with code. While this only saves the host 30 seconds, this is able to run over and over for years to come.']
+            },
+            {
+                "name": " Instagram Uploading Bot",
+                "image": null,
+                "gitHub": "https://github.com/ThisisJackRyan/InstagramUploadBot",
+                "video": null,
+                "Descriptions":["This Program is written in python and uploads picture to instagram. My Instagram Bot uses the selenium 4.7.2 to navigate the login and upload process.", "The majority of my Code is in login and mainPage using Tkinter. Where I have created a basic UI to manage several Instagram accounts.", "My future plan with this is to add more sites to post on. I also want to incorporate machine learning so that a web Scrapper will be able to take an image and decide if it is visually pleasing enough to post."]
+            }
+        ]
+    }
+    
+    //const obj = JSON.parse(mainProjects);
+    //const [project, setProject] = useState([]);
+    
+    //setProject(mainProjects.Projects);
+
+   console.log(mainProjects);
+    return( 
     <div>
         <style>
-            {`
+            {` 
                 body {
                     background-image: url(${backgroundImage});
                     background-position: center;
@@ -18,42 +46,14 @@ function Projects(){
                 }
             `}
         </style>
-        <div className="MarginShovePastHeader">
-            <div>
-                <div className="flex">
-                    <div className="x2">
-                        <div className="flex center TitleOfProgect LinkToGit">
-                            <a href="https://github.com/ThisisJackRyan/FSVR-Changing-Arena" target="_blank">FSVR Changing Arena</a>
-                        </div>
-                        
-                    </div>
-                    <div className="x3"></div>
-                </div>
-                <div className="flex">
-                    <div className="x2">
-                        <img src={vertigoImage} alt="" />
-                    </div>
-                    <div className="ReadMe x3 flex center middle">
-                        <div>
-                            <span>At FlipSwitch VR we use a software called Haze, which host our games and sends the data out to the other headsets. The goal of this program was to move the Players and their repsective machineGuids to the other arena.</span>
-                            <br />
-                            <br />
-                            <span>The part I enjoy about this simple but functional code is that it is my first "Real Life" example of how you can optimaze your life with code. While this only saves the host 30 seconds, this is able to run over and over for years to come.</span>
-                            <br />
-                            <br />
-                            <div className="LinkToGit">
-                                <a href="https://github.com/ThisisJackRyan/FSVR-Changing-Arena" target="_blank">
-                                    <span>To learn more click the link to my github</span>
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div>
-                    <div className="x2"></div>
-                    <div className="x3"></div>
-                </div>
-            </div>
+        <div className="PaddingShovePastHeader">
+            
+                {mainProjects.Projects.map((data, idx) =>(
+                    <Project projects={data} />
+                ))}
+                
+                
+            
         </div>
     </div>
     );

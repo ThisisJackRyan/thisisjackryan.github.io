@@ -192,20 +192,24 @@ margin:2%;
   color:white;
   text-decoration: none;
 }
-.LinkToGit{
-  font-family: "Lucida Console", "Courier New", monospace;
+
+.LinkToGit a span{
+  border-bottom: solid white 2px;
+  padding-bottom: 1px;
 }
 
 .LinkToGit :hover{
   color:gray;
+  border-color: gray;
 }
 
-.TitleOfProgect{
-  font-size: 2em;
+.TitleOfProject{
+  font-family: "Lucida Console", "Courier New", monospace;
+  font-size: 3em;
   text-align: center;
 }
 
-.MarginShovePastHeader{
+.PaddingShovePastHeader{
   padding-top:100px;
 }
 
