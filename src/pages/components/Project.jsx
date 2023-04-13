@@ -1,6 +1,4 @@
 
-
-
 const Project = ({projects}) => {
     return (
         <div>
@@ -15,7 +13,7 @@ const Project = ({projects}) => {
                 </div>
                 <div className="flex">
                     <div className="x2">
-                        <img src={projects.img} alt={projects.name} onError={(e) => console.log(e, e.message)} />
+                        <img src={projects.image} alt={projects.name} onError={(e) => console.log(e, e.message)} />
                     </div>
                     <div className="ReadMe x3 flex center middle">
                         <div>
