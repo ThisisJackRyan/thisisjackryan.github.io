@@ -82,7 +82,7 @@ img{
 
 /*Home*/
 /*this doesn't work on school mac */
-/*@font-face {
+@font-face {
   font-family: Play;
   src: url("C:\fonts\Play\Play-Regular.ttf") format("opentype");
 }
@@ -91,7 +91,7 @@ img{
 font-family: PlayBold;
 font-weight: bold;
 src: url("C:\fonts\Play\Play-Bold.ttf") format("opentype");
-}*/
+}
 
 
 .article{
@@ -244,3 +244,48 @@ margin:2%;
 .highlights span{
   border-bottom:solid gray 2px;
 }
+.miniProjects{
+  text-align: center;
+  margin-bottom: 3em;
+}
+.miniProject{
+  margin:1em;
+}
+
+.miniProject a{
+  font-family: "Lucida Console", "Courier New", monospace;
+  text-decoration: none;
+  color:white;
+  font-size: 2em;
+}
+
+.miniProject a:hover{
+  color:gray;
+}
+
+.miniProjectsImage{
+  margin: 3em;
+
+}
+.miniProjectsImage img{
+  width:150px;
+  height: 150px;
+  border-radius: 50%;
+}
+
+/*Contact.jsx*/ 
+/*@keyframes example {
+  0%   {background-color:red; left:0px; top:0px;}
+  25%  {background-color:yellow; left:200px; top:0px;}
+  50%  {background-color:blue; left:200px; top:200px;}
+  75%  {background-color:green; left:0px; top:200px;}
+  100% {background-color:red; left:0px; top:0px;}
+}
+
+.example{
+  position: relative;
+  background-color: red;
+  animation-name: example;
+  animation-duration: 4s;
+  animation-iteration-count: infinite;
+}*/

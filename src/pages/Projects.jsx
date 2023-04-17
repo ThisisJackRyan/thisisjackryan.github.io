@@ -2,6 +2,7 @@
 import backgroundImage from './images/Cube.jpg';
 //import vertigoImage from "./images/vertigo.avif"
 import Project from './components/Project';
+import MiniProject from "./components/MiniProject";
 
 
 
@@ -27,11 +28,29 @@ function Projects(){
             }
         ]
     }
-    
-    //const obj = JSON.parse(mainProjects);
-    //const [project, setProject] = useState([]);
-    
-    //setProject(mainProjects.Projects);
+    const miniProjects = {
+        "Projects":[
+            {
+                "name": "FSVR Changing Arena",
+                "image": require("./images/vertigo.avif"),
+                "gitHub": "https://github.com/ThisisJackRyan/FSVR-Changing-Arena",
+                "video": null,
+            },
+            {
+                "name": "FSVR Changing Arena",
+                "image": require("./images/vertigo.avif"),
+                "gitHub": "https://github.com/ThisisJackRyan/FSVR-Changing-Arena",
+                "video": null,
+            },
+            {
+                "name": "FSVR Changing Arena",
+                "image": require("./images/vertigo.avif"),
+                "gitHub": "https://github.com/ThisisJackRyan/FSVR-Changing-Arena",
+                "video": null,
+            },
+        ]
+    }
+
 
    console.log(mainProjects);
     return( 
@@ -51,8 +70,18 @@ function Projects(){
                 {mainProjects.Projects.map((project) =>(
                     <Project projects={project} />
                 ))}
-            <div className="highlights flex center"> 
-                <span>Highlights</span>
+            <div>
+                <div className="highlights flex center"> 
+                    <span>Highlights</span>
+                </div>
+                <div className="flex">
+                    {
+                        miniProjects.Projects.map((project) =>(
+                            <div className="x1 miniProjects">
+                                <MiniProject projects={project} />
+                            </div>
+                    ))}
+                </div>
             </div>
         </div>
 
