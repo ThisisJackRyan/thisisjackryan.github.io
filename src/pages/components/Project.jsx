@@ -46,7 +46,7 @@ const Project = ({projects}) => {
                         </div>
                     </div>
                 </div>
-                <div className="borderBottomProject">-------------------------------------------------------------------------------------</div>    
+                <div className="borderBottomProject"></div>    
             </div>
     )
 }

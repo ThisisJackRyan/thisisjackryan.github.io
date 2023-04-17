@@ -51,10 +51,8 @@ function Projects(){
                 {mainProjects.Projects.map((project) =>(
                     <Project projects={project} />
                 ))}
-                
-                
-            
         </div>
+        
     </div>
     );
 }
