@@ -51,8 +51,11 @@ function Projects(){
                 {mainProjects.Projects.map((project) =>(
                     <Project projects={project} />
                 ))}
+            <div className="highlights flex center"> 
+                <span>Highlights</span>
+            </div>
         </div>
-        
+
     </div>
     );
 }

@@ -235,3 +235,12 @@ margin:2%;
   margin-top:1em;
   border-bottom: dashed gray .15em;
 }
+
+.highlights{
+  font-family: "Lucida Console", "Courier New", monospace;
+  font-size: 2em;
+  margin-bottom: 2em;
+}
+.highlights span{
+  border-bottom:solid gray 2px;
+}
