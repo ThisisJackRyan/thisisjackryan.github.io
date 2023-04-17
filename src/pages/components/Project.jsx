@@ -2,7 +2,7 @@
 
 const Project = ({projects}) => {
     return (
-        <div>
+        <div className="projectSection">
                 <div className="flex">
                     <div className="x2">
                         <div className="flex center TitleOfProject LinkToGit">
@@ -20,23 +20,24 @@ const Project = ({projects}) => {
                         <div>
                             
                                 {
-                                    //console.log(projects.descriptions)
-                                /*projects.descriptions.map((line) => (
+                                //console.log(projects.descriptions)
+
+                                projects.descriptions.map((line) => (
                                     <>
                                         <span>{line}</span>
                                         <br />
                                         <br />
                                     </>
 
-                                ))*/}
+                                ))}
 
                                 
-                            <span>At FlipSwitch VR we use a software called Haze, which host our games and sends the data out to the other headsets. The goal of this program was to move the Players and their respective machineGuids to the other arena.</span>
+                            {/*<span>At FlipSwitch VR we use a software called Haze, which host our games and sends the data out to the other headsets. The goal of this program was to move the Players and their respective machineGuids to the other arena.</span>
                             <br />
                             <br />
                             <span>The part I enjoy about this simple but functional code is that it is my first "Real Life" example of how you can optimize your life with code. While this only saves the host 30 seconds, this is able to run over and over for years to come.</span>
                             <br />
-                            <br />
+                            <br />*/}
                             <div className="LinkToGit">
                                 <a href={projects.gitHub} target="_blank" rel="noreferrer">
                                     <span>To learn more click the link to my github</span>
@@ -45,6 +46,7 @@ const Project = ({projects}) => {
                         </div>
                     </div>
                 </div>
+                <div className="borderBottomProject">-------------------------------------------------------------------------------------</div>    
             </div>
     )
 }
