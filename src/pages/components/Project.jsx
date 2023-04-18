@@ -12,12 +12,12 @@ const Project = ({projects}) => {
                     </div>
                     <div className="x3"></div>
                 </div>
-                <div className="flex " id="box">
+                <div className="flex ">
                     <div className="x2">
                         <img src={projects.image} alt={projects.name} />
                     </div>
                     <div className="ReadMe x3 flex center middle">
-                        <div>
+                        <div >
                             
                                 {
                                 //console.log(projects.descriptions)

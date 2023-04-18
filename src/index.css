@@ -187,25 +187,8 @@ margin:2%;
 
 
 
-/*Progects.jsx*/
+/*Projects.jsx*/
 
-@keyframes ShadowBox {
-  0% {
-    box-shadow: 0px 0px rgb(1, 1, 58);
-  }
-  25% {
-    box-shadow: 2px 2px rgb(2, 2, 92);
-  }
-  50% {
-    box-shadow: 4px 4px rgb(4, 4, 137);
-  }
-  75% {
-    box-shadow: 6px 6px rgb(5, 5, 175);
-  }
-  100% {
-    box-shadow: 8px 8px rgb(3, 3, 206);
-  }
-}
 .LinkToGit a {
   color:white;
   text-decoration: none;
@@ -244,10 +227,11 @@ margin:2%;
  
 }
 
-#box :hover{
+.ReadMe:hover {
   transform: translateY(-10px);
   box-shadow: 0px 20px 40px rgba(0, 0, 0, 0.75);
 }
+
 
 .projectSection{
   padding: 1em;
