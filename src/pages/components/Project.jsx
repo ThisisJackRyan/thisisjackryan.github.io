@@ -12,7 +12,7 @@ const Project = ({projects}) => {
                     </div>
                     <div className="x3"></div>
                 </div>
-                <div className="flex">
+                <div className="flex " id="box">
                     <div className="x2">
                         <img src={projects.image} alt={projects.name} />
                     </div>
