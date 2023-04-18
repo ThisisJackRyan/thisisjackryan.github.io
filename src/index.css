@@ -277,16 +277,14 @@ margin:2%;
 
 .LanguageImage{
   margin: 3em;
-
-}
-.LanguageImage img{
-  width:150px;
+  width: 150px;
   height: 150px;
-  border-radius: 50%;
+  overflow: hidden;
+  border-radius:50%;
   transition: all ease 0.5s;
-  
 }
-.LanguageImage img:hover{
+
+.LanguageImage:hover{
   transform: translateY(-10px);
   box-shadow: 0px 20px 40px rgba(0, 0, 0, 0.75);
 }

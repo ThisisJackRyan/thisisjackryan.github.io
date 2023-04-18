@@ -31,23 +31,23 @@ function Projects(){
     const miniProjects = {
         "Projects":[
             {
-                "name": "FSVR Changing Arena",
-                "image": require("./images/vertigo.avif"),
+                "name": "Java",
+                "image": require("./images/java.png"),
                 "gitHub": "https://github.com/ThisisJackRyan/FSVR-Changing-Arena",
-                "video": null,
+                
             },
             {
-                "name": "FSVR Changing Arena",
-                "image": require("./images/vertigo.avif"),
+                "name": "JavaScript",
+                "image": require("./images/JavaScript.png"),
                 "gitHub": "https://github.com/ThisisJackRyan/FSVR-Changing-Arena",
-                "video": null,
+                
             },
             {
-                "name": "FSVR Changing Arena",
-                "image": require("./images/vertigo.avif"),
+                "name": "Python",
+                "image": require("./images/Python.jpg"),
                 "gitHub": "https://github.com/ThisisJackRyan/FSVR-Changing-Arena",
-                "video": null,
-            },
+                
+            }
         ]
     }
 
@@ -72,7 +72,7 @@ function Projects(){
                 ))}
             <div>
                 <div className="highlights flex center"> 
-                    <span>Languages</span>
+                    <span>Best Languages</span>
                 </div>
                 <div className="flex">
                     {
