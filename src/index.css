@@ -262,6 +262,8 @@ margin:2%;
 
 .Language{
   margin:1em;
+  display:flex;
+  justify-content: center;
 }
 
 .Language a{
@@ -277,11 +279,15 @@ margin:2%;
 
 .LanguageImage{
   margin: 3em;
+  justify-content: center;
+  align-items: center;
+  
   width: 150px;
   height: 150px;
   overflow: hidden;
   border-radius:50%;
   transition: all ease 0.5s;
+  
 }
 
 .LanguageImage:hover{
