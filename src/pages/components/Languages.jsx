@@ -1,10 +1,10 @@
 
-const MiniProject = ({projects}) => {
+const Languages = ({projects}) => {
     return (
-        <div className="miniProject">
+        <div className="Language">
             <a href={projects.gitHub} target="_blank" rel="noreferrer">
                 <div>
-                    <div className="miniProjectsImage">
+                    <div className="LanguageImage">
                         <img src={projects.image} alt={projects.name} />
                     </div>
                 </div>
@@ -16,4 +16,4 @@ const MiniProject = ({projects}) => {
     )
 }
 
-export default MiniProject;
+export default Languages;

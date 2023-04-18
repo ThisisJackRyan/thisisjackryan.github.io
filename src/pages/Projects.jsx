@@ -2,7 +2,7 @@
 import backgroundImage from './images/Cube.jpg';
 //import vertigoImage from "./images/vertigo.avif"
 import Project from './components/Project';
-import MiniProject from "./components/MiniProject";
+import Languages from "./components/Languages";
 
 
 
@@ -72,13 +72,13 @@ function Projects(){
                 ))}
             <div>
                 <div className="highlights flex center"> 
-                    <span>Highlights</span>
+                    <span>Languages</span>
                 </div>
                 <div className="flex">
                     {
                         miniProjects.Projects.map((project) =>(
-                            <div className="x1 miniProjects">
-                                <MiniProject projects={project} />
+                            <div className="x1 Languages">
+                                <Languages projects={project} />
                             </div>
                     ))}
                 </div>

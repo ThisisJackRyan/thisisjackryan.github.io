@@ -82,7 +82,7 @@ img{
 
 /*Home*/
 /*this doesn't work on school mac */
-@font-face {
+/*@font-face {
   font-family: Play;
   src: url("C:\fonts\Play\Play-Regular.ttf") format("opentype");
 }
@@ -91,7 +91,7 @@ img{
 font-family: PlayBold;
 font-weight: bold;
 src: url("C:\fonts\Play\Play-Bold.ttf") format("opentype");
-}
+}*/
 
 
 .article{
@@ -224,6 +224,7 @@ margin:2%;
   background-color: rgba(0,0,0,.7);
   padding: 1em;
   transition: all ease 0.5s;
+  box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.3);
  
 }
 
@@ -253,33 +254,41 @@ margin:2%;
 .highlights span{
   border-bottom:solid gray 2px;
 }
-.miniProjects{
+.Languages{
   text-align: center;
   margin-bottom: 3em;
 }
-.miniProject{
+
+
+.Language{
   margin:1em;
 }
 
-.miniProject a{
+.Language a{
   font-family: "Lucida Console", "Courier New", monospace;
   text-decoration: none;
   color:white;
   font-size: 2em;
 }
 
-.miniProject a:hover{
+.Language a:hover{
   color:gray;
 }
 
-.miniProjectsImage{
+.LanguageImage{
   margin: 3em;
 
 }
-.miniProjectsImage img{
+.LanguageImage img{
   width:150px;
   height: 150px;
   border-radius: 50%;
+  transition: all ease 0.5s;
+  
+}
+.LanguageImage img:hover{
+  transform: translateY(-10px);
+  box-shadow: 0px 20px 40px rgba(0, 0, 0, 0.75);
 }
 
 /*Contact.jsx*/ 
