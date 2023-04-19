@@ -20,11 +20,18 @@ function Projects(){
                 "descriptions":["At FlipSwitch VR we use a software called Haze, which host our games and sends the data out to the other headsets. The goal of this program was to move the Players and their respective machineGuids to the other arena.", 'The part I enjoy about this simple but functional code is that it is my first "Real Life" example of how you can optimize your life with code. While this only saves the host 30 seconds, this is able to run over and over for years to come.']
             },
             {
-                "name": " Instagram Uploading Bot",
+                "name": "Instagram Uploading Bot",
                 "image": require("./images/instagramUpload.png"),
                 "gitHub": "https://github.com/ThisisJackRyan/InstagramUploadBot",
                 "video": null,
                 "descriptions":["This Program is written in python and uploads picture to instagram. My Instagram Bot uses the selenium 4.7.2 to navigate the login and upload process.", "The majority of my Code is in login and mainPage using Tkinter. Where I have created a basic UI to manage several Instagram accounts.", "My future plan with this is to add more sites to post on. I also want to incorporate machine learning so that a web Scrapper will be able to take an image and decide if it is visually pleasing enough to post."]
+            },
+            {
+                "name": "Hawklet Express Website",
+                "image": require("./images/HawkletExpress.png"),
+                "gitHub": "https://github.com/ThisisJackRyan/Hawklet-Express-website",
+                "video": null,
+                "descriptions":["My School is opening a Breakfast Cafe. I decided to make a website for it so that online orders can be taken.","This website is made using Html, JavaScript, and Css. The Hawklet Express website was my first big web project that catapulted me into my interest of web design. I made in congruencey with my Webpage design class. I also presented this to my class and each time they would critique and help me make a better version. This was my final version when the semester ended and to veiw it I have a gh-pages set up on my github. ","I am using the font Jupiter Pro. Which is Rockhurst Highschool Font. The only issue is that the 'A' doesn't have the middle cross bar. I fixed it by using the lower case alpha 'α'. This doesn't always work on all devices for some reason. I would change the font but this is what my teacher said looked best for Rockhurst."]
             }
         ]
     }
@@ -66,6 +73,9 @@ function Projects(){
             `}
         </style>
         <div className="PaddingShovePastHeader">
+            <div className=" TitleOfProject ">
+                <span>Projects</span>
+            </div>
             
                 {mainProjects.Projects.map((project) =>(
                     <Project projects={project} />

@@ -189,6 +189,7 @@ margin:2%;
 
 /*Projects.jsx*/
 
+
 .LinkToGit a {
   color:white;
   text-decoration: none;
@@ -208,6 +209,10 @@ margin:2%;
   font-family: "Lucida Console", "Courier New", monospace;
   font-size: 3em;
   text-align: center;
+}
+.TitleOfProject span{
+    border-bottom:solid white 2px;
+    padding-bottom:0px;
 }
 
 .PaddingShovePastHeader{
