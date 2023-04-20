@@ -73,7 +73,7 @@ function Projects(){
             `}
         </style>
         <div className="PaddingShovePastHeader">
-            <div className=" TitleOfProject ">
+            <div className=" ProjectTitle ">
                 <span>Projects</span>
             </div>
             

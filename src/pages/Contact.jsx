@@ -1,4 +1,8 @@
 import backgroundImage from './images/Cube.jpg';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faInstagram} from '@fortawesome/free-brands-svg-icons'
+
+
 
 const Contact = () => {
     return(
@@ -13,7 +17,14 @@ const Contact = () => {
                 }
             `}
         </style>
-        <div className="example">Contact</div>
+        <div className="example">
+            <div className="PaddingShovePastHeader">
+                <div className="ContactTitle"><span>Contact</span></div>
+                <a href="#">
+                    <FontAwesomeIcon icon={faInstagram} />
+                </a>
+            </div>
+        </div>
        
     </div>
     );

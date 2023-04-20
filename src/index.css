@@ -71,6 +71,7 @@ img{
 }
 
 .link:hover{ 
+  color:white;
   border-bottom: solid white 2px;
 }
 
@@ -128,9 +129,9 @@ margin-bottom: 30px;
 }
 
 .homePicture{
-border: solid gray 2px;
-border-radius: 5px;
-margin:2%;
+  border: solid gray 2px;
+  border-radius: 5px;
+  margin:2%;
 }
 .homePicture img{
   width:100%;
@@ -205,8 +206,14 @@ margin:2%;
   border-color: gray;
 }
 
+.ProjectTitle{
+  font-family: Play;
+  font-size: 3em;
+  text-align: center;
+}
+
 .TitleOfProject{
-  font-family: "Lucida Console", "Courier New", monospace;
+  font-family: Play;
   font-size: 3em;
   text-align: center;
 }
@@ -321,3 +328,14 @@ margin:2%;
   animation-duration: 4s;
   animation-iteration-count: infinite;
 }*/
+
+
+/*Contact*/
+.ContactTitle{
+  font-family: Play;
+  font-size: 3em;
+  text-align: center;
+}
+.ContactTitle span{
+  border-bottom: solid gray 2px;
+}
