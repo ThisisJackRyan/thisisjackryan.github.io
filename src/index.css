@@ -82,7 +82,7 @@ img{
 
 /*Home*/
 /*this doesn't work on school mac */
-/*@font-face {
+@font-face {
   font-family: Play;
   src: url("C:\fonts\Play\Play-Regular.ttf") format("opentype");
 }
@@ -91,7 +91,7 @@ img{
 font-family: PlayBold;
 font-weight: bold;
 src: url("C:\fonts\Play\Play-Bold.ttf") format("opentype");
-}*/
+}
 
 
 .article{
@@ -219,6 +219,12 @@ margin:2%;
   padding-top:100px;
 }
 
+
+.projectImage{
+  display:flex;
+  align-items: center;
+  justify-content: center;
+}
 .ReadMe{
   font-family: "Lucida Console", "Courier New", monospace;
   margin:3em;
@@ -284,9 +290,6 @@ margin:2%;
 
 .LanguageImage{
   margin: 3em;
-  justify-content: center;
-  align-items: center;
-  
   width: 150px;
   height: 150px;
   overflow: hidden;
@@ -294,6 +297,8 @@ margin:2%;
   transition: all ease 0.5s;
   
 }
+
+
 
 .LanguageImage:hover{
   transform: translateY(-10px);
