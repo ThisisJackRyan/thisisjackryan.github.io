@@ -104,6 +104,21 @@ src: url("C:\fonts\Play\Play-Bold.ttf") format("opentype");
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 .article{
 justify-content: center;
 align-items: center;
@@ -225,10 +240,18 @@ margin-bottom: 30px;
   font-family: Play;
   font-size: 3em;
   text-align: center;
+  
+}
+.TitleOfProject a{
+    transition: all ease 0.5s;
 }
 .TitleOfProject span{
     border-bottom:solid white 2px;
     padding-bottom:0px;
+    
+}
+.TitleOfProject a:hover{
+  transform: translateY(-5px);
 }
 
 .PaddingShovePastHeader{
@@ -347,4 +370,25 @@ margin-bottom: 30px;
 }
 .ContactTitle span{
   border-bottom: solid gray 2px;
+}
+.ContactLinkSection{
+  margin: 3em;
+}
+
+.ContactIcon a{
+  padding:0px;
+  color:white;
+  font-size: 2em;
+  border-radius: 50%;
+  box-shadow: 0px 20px 40px rgba(255, 255, 255, 0.3);
+  transition: all ease 0.25s;
+}
+
+.ContactIcon a:hover{
+  transform: scale(0.85);
+  box-shadow: 0px 20px 40px rgba(0, 0, 0, 0.3);
+}
+.ContactIcon a svg{
+  margin: 0px;
+  height: 100%;
 }
