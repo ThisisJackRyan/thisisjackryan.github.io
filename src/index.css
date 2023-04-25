@@ -351,6 +351,7 @@ margin-bottom: 30px;
 }
 
 .ContactIcon a{
+  background: none;
   padding:0px;
   color:white;
   font-size: 2em;
