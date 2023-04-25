@@ -20,9 +20,17 @@ const Contact = () => {
         <div className="example">
             <div className="PaddingShovePastHeader">
                 <div className="ContactTitle"><span>Contact</span></div>
-                <a href="#">
-                    <FontAwesomeIcon icon={faInstagram} />
-                </a>
+                <div className="flex ContactLinkSection">
+                    <div className="x1 ContactIcon flex center ">
+                        <a href="#" target="_blank" rel="noreferrer" >
+                            <FontAwesomeIcon icon={faInstagram} />
+                        </a>
+                    </div>
+                    <div className="x1"></div>
+                    <div className="x1"></div>
+                    <div className="x1"></div>
+                </div>
+                
             </div>
         </div>
        
