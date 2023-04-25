@@ -96,6 +96,16 @@ src: url("C:\fonts\Play\Play-Bold.ttf") format("opentype");
 
 /*mac*/
 
+@font-face {
+  font-family: Play;
+  src: url("~/Downloads/Play/Play-Regular.ttf") format("opentype");
+}
+
+@font-face {
+font-family: PlayBold;
+font-weight: bold;
+src: url("~/Downloads/Play/Play-Bold.ttf") format("opentype");
+}
 
 
 
