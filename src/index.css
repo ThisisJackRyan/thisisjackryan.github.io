@@ -369,3 +369,48 @@ margin-bottom: 30px;
 .ContactIcon a svg{
   height: 100%;
 }
+
+
+.ContactMe{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
+}
+.ContactMe .input{
+  margin:1em;
+}
+.ContactMe input{
+  background-color: gray;
+}
+.ContactMe textarea{
+  background-color: gray;
+}
+
+/*Styling the place holder!*/
+::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+  color: black;
+  opacity: 1; /* Firefox */
+}
+
+:-ms-input-placeholder { /* Internet Explorer 10-11 */
+  color: black;
+}
+
+::-ms-input-placeholder { /* Microsoft Edge */
+  color: black;
+}
+
+
+
+.name{
+  flex:1;
+}
+.email{
+  flex:1;
+}
+.message textarea{
+  width:100%;
+  height:10em;
+}
+

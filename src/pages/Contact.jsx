@@ -46,6 +46,21 @@ const Contact = () => {
                         </a>
                     </div>
                 </div>
+                <div className="ContactMe">
+                    <div>
+                        <div className="flex">
+                            <div className="name input">
+                                <input type="text" placeholder="Jack Ryan" />
+                            </div>
+                            <div className="email input">
+                                <input type="email" placeholder="youremail@gmail.com" />
+                            </div>
+                        </div>
+                        <div className="message input ">
+                            <textarea type="text" placeholder="Type your message here..." />
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
        
