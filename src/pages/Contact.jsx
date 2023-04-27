@@ -5,10 +5,26 @@ import { faGithub} from '@fortawesome/free-brands-svg-icons';
 import { faEnvelope } from '@fortawesome/free-solid-svg-icons';
 import { faDiscord } from '@fortawesome/free-brands-svg-icons';
 
+import React, { useRef } from 'react';
+import emailjs from '@emailjs/browser';
+
 
 
 
 const Contact = () => {
+    const form = useRef();
+
+    const sendEmail = (e) => {
+        e.preventDefault();
+    
+        emailjs.sendForm('service_e1y295p', 'template_ykpc1qs', form.current, 'OMNNc2vPllN2qFAjr')
+          .then((result) => {
+              console.log(result.text);
+          }, (error) => {
+              console.log(error.text);
+          });
+      };
+
     return(
     <div>
       <style>
@@ -50,14 +66,17 @@ const Contact = () => {
                     <div>
                         <div className="flex">
                             <div className="name input">
-                                <input type="text" placeholder="Jack Ryan" />
+                                <input type="text" placeholder="Jack Ryan" required />
                             </div>
                             <div className="email input">
-                                <input type="email" placeholder="youremail@gmail.com" />
+                                <input type="email" placeholder="youremail@gmail.com" required />
                             </div>
                         </div>
                         <div className="message input ">
-                            <textarea type="text" placeholder="Type your message here..." />
+                            <textarea type="text" placeholder="Type your message here..." required />
+                        </div>
+                        <div>
+                            <button className="btn-send">Send</button>
                         </div>
                     </div>
                 </div>
