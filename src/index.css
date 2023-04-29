@@ -18,6 +18,15 @@ body {
 .flex.middle{align-items: center};
 .flex.bottom{align-items: end;}
 
+.flex-column{
+  display: flex;
+  flex-direction: column;
+}
+.flex-reverse-column{
+  display: flex;
+  flex-direction: column-reverse;
+}
+
 
 .x1{flex:1;}
 .x2{flex:2;}
@@ -321,9 +330,7 @@ margin-bottom: 30px;
 }
 
 /*Contact.jsx*/ 
-
-
-/*Contact*/
+/*Contact Icons and title*/
 .ContactTitle{
   font-family: Play;
   font-size: 3em;
@@ -408,10 +415,7 @@ margin-bottom: 30px;
 .ContactMe .input{
   margin:1em;
 }
-.ContactMe input{
-  background-color: gray;
-}
-.ContactMe textarea{
+.ContactMe input, .ContactMe textarea{
   background-color: gray;
 }
 
@@ -431,51 +435,37 @@ margin-bottom: 30px;
 
 
 
-.name{
+.name, .email{
   flex:1;
-  
 }
-.name input{
+.name input, .email input, .message textarea{
   border:none;
   transition: all ease 0.5s;
   border-radius: 2px;
+  padding: 2px;
+  padding-left:3px;
 }
-.name input:focus{
+.name input:focus, .email input:focus, .message textarea:focus{
   outline-style: solid;
   outline-color: black;
   outline-width: 2px;
   box-shadow: 0px 20px 40px rgba(0, 0, 0, 0.7);
+  transform: translateY(-10px);
+}
+.name span, .email span, .message span{
+  text-decoration: underline white;
+  padding-bottom: 0.25em;
+  transition: all ease-in 0.5s;
+}
+.name input:focus + span, .email input:focus + span, .message textarea:focus + span{
   transform: translateY(-10px);
 }
 
-.email{
-  flex:1;
-}
-.email input{
-  border:none;
-  transition: all ease 0.5s;
-  border-radius: 2px;
-}
-.email input:focus{
-  outline-style: solid;
-  outline-color: black;
-  outline-width: 2px;
-  box-shadow: 0px 20px 40px rgba(0, 0, 0, 0.7);
-  transform: translateY(-10px);
-}
 .message textarea{
   width:100%;
   height:10em;
-  transition: all ease 0.5s;
-  border-radius: 2px;
 }
-.message textarea:focus{
-  outline-style: solid;
-  outline-color: black; 
-  outline-width: 2px;
-  box-shadow: 0px 20px 40px rgba(0, 0, 0, 0.7);
-  transform: translateY(-10px);
-}
+
 .btn-send{
     background-color: gray;
 }

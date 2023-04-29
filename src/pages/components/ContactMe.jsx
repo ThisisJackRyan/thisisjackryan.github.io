@@ -25,15 +25,18 @@ const ContactMe = () => {
         <div className="ContactMe">
                     <form ref={form} onSubmit={sendEmail}>
                         <div className="flex">
-                            <div className="name input">
+                            <div className="name input flex-reverse-column">
                                 <input type="text" name="user_name" placeholder="Jack Ryan" required />
+                                <span>Name</span>
                             </div>
-                            <div className="email input">
+                            <div className="email input flex-reverse-column"> 
                                 <input type="email" name="user_email" placeholder="youremail@gmail.com" required />
+                                <span>Email</span>
                             </div>
                         </div>
-                        <div className="message input ">
+                        <div className="message input flex-reverse-column ">
                             <textarea type="text" name="message" placeholder="Type your message here..." required />
+                            <span>Message</span>
                         </div>
                         <div>
                             <button type="submit" value="Send" className="btn-send">Send</button>
