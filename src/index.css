@@ -4,7 +4,8 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   font-size: 16px;
-  background-image: url("./pages/images/BackGround.jpg");
+ 
+  background: linear-gradient(to left, #434343 0%, black 100%);
   color:white;
 }
 
@@ -369,13 +370,18 @@ margin-bottom: 30px;
 .ContactIcon a svg, .ContactIcon div svg{
   height: 100%;
 }
+.ContactIcon a svg path, .ContactIcon div svg path{
+  background: none;
+  border:none;
+
+}
 
 
 .ContactMe{
   display: flex;
   justify-content: center;
   align-items: center;
-  
+  transition: opacity 200ms;
 }
 
 .ContactMe > form{

@@ -1,5 +1,4 @@
 
-import backgroundImage from './images/Cube.jpg';
 //import vertigoImage from "./images/vertigo.avif"
 import Project from './components/Project';
 import Languages from "./components/Languages";
@@ -62,13 +61,6 @@ function Projects(){
    console.log(mainProjects);
     return( 
     <div>
-        <style>
-            {` 
-                body {
-                    background: linear-gradient(to left, #434343 0%, black 100%);
-                }
-            `}
-        </style>
         <div className="PaddingShovePastHeader">
             <div className=" ProjectTitle ">
                 <span>Projects</span>

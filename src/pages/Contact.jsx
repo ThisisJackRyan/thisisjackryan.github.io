@@ -1,4 +1,4 @@
-import backgroundImage from './images/Cube.jpg';
+
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faInstagram} from '@fortawesome/free-brands-svg-icons';
 import { faGithub} from '@fortawesome/free-brands-svg-icons';
@@ -23,13 +23,6 @@ const Contact = () => {
 
     return(
     <div>
-      <style>
-            {` 
-                body {
-                    background: linear-gradient(to left, #434343 0%, black 100%);     
-                }
-            `}
-        </style>
         <div className="">
             <div className="PaddingShovePastHeader">
                 <div className="ContactTitle"><span>Contact</span></div>
