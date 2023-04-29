@@ -5,26 +5,21 @@ import { faGithub} from '@fortawesome/free-brands-svg-icons';
 import { faEnvelope } from '@fortawesome/free-solid-svg-icons';
 import { faDiscord } from '@fortawesome/free-brands-svg-icons';
 
-import React, { useRef } from 'react';
-import emailjs from '@emailjs/browser';
+import ContactMe  from './components/ContactMe';
+import { useState } from "react";
+
+
 
 
 
 
 const Contact = () => {
-    const form = useRef();
 
-    const sendEmail = (e) => {
-        e.preventDefault();
-    
-        emailjs.sendForm('service_e1y295p', 'template_ykpc1qs', form.current, 'OMNNc2vPllN2qFAjr')
-          .then((result) => {
-              console.log(result.text);
-          }, (error) => {
-              console.log(error.text);
-          });
-          e.target.reset();
-      };
+    const [visible, setVisible] = useState(false);
+
+    const handleToggle = () => {
+        setVisible((current) => !current);
+    }
 
     return(
     <div>
@@ -52,8 +47,8 @@ const Contact = () => {
                             <FontAwesomeIcon icon={faGithub} />
                         </a>
                     </div>
-                    <div className="x1 ContactIcon flex center ">
-                        <a href="https://monkeytype.com/" target="_blank" rel="noreferrer" >
+                    <div className="x1 ContactIcon flex center " onClick={handleToggle}>
+                        <a href="#">
                             <FontAwesomeIcon icon={faEnvelope} />
                         </a>
                     </div>
@@ -63,24 +58,7 @@ const Contact = () => {
                         </a>
                     </div>
                 </div>
-                <div className="ContactMe">
-                    <form ref={form} onSubmit={sendEmail}>
-                        <div className="flex">
-                            <div className="name input">
-                                <input type="text" name="user_name" placeholder="Jack Ryan" required />
-                            </div>
-                            <div className="email input">
-                                <input type="email" name="user_email" placeholder="youremail@gmail.com" required />
-                            </div>
-                        </div>
-                        <div className="message input ">
-                            <textarea type="text" name="message" placeholder="Type your message here..." required />
-                        </div>
-                        <div>
-                            <button type="submit" value="Send" className="btn-send">Send</button>
-                        </div>
-                    </form >
-                </div>
+                {visible && <ContactMe />}
             </div>
         </div>
        
