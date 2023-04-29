@@ -378,7 +378,7 @@ margin-bottom: 30px;
 
 }
 
-.ContactMe > div{
+.ContactMe > form{
   font-family: "Lucida Console", "Courier New", monospace;
   margin:3em;
   text-align: center;
@@ -464,3 +464,5 @@ margin-bottom: 30px;
 .btn-send{
     background-color: gray;
 }
+
+

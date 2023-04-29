@@ -23,6 +23,7 @@ const Contact = () => {
           }, (error) => {
               console.log(error.text);
           });
+          e.target.reset();
       };
 
     return(
@@ -52,33 +53,33 @@ const Contact = () => {
                         </a>
                     </div>
                     <div className="x1 ContactIcon flex center ">
-                        <a href="#" target="_blank" rel="noreferrer" >
+                        <a href="https://monkeytype.com/" target="_blank" rel="noreferrer" >
                             <FontAwesomeIcon icon={faEnvelope} />
                         </a>
                     </div>
                     <div className="x1 ContactIcon flex center ">
-                        <a href="#" target="_blank" rel="noreferrer" >
+                        <a href="https://monkeytype.com/" target="_blank" rel="noreferrer" >
                             <FontAwesomeIcon icon={faDiscord} />
                         </a>
                     </div>
                 </div>
                 <div className="ContactMe">
-                    <div>
+                    <form ref={form} onSubmit={sendEmail}>
                         <div className="flex">
                             <div className="name input">
-                                <input type="text" placeholder="Jack Ryan" required />
+                                <input type="text" name="user_name" placeholder="Jack Ryan" required />
                             </div>
                             <div className="email input">
-                                <input type="email" placeholder="youremail@gmail.com" required />
+                                <input type="email" name="user_email" placeholder="youremail@gmail.com" required />
                             </div>
                         </div>
                         <div className="message input ">
-                            <textarea type="text" placeholder="Type your message here..." required />
+                            <textarea type="text" name="message" placeholder="Type your message here..." required />
                         </div>
                         <div>
-                            <button className="btn-send">Send</button>
+                            <button type="submit" value="Send" className="btn-send">Send</button>
                         </div>
-                    </div>
+                    </form >
                 </div>
             </div>
         </div>
