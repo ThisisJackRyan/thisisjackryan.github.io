@@ -321,21 +321,6 @@ margin-bottom: 30px;
 }
 
 /*Contact.jsx*/ 
-/*@keyframes example {
-  0%   {background-color:red; left:0px; top:0px;}
-  25%  {background-color:yellow; left:200px; top:0px;}
-  50%  {background-color:blue; left:200px; top:200px;}
-  75%  {background-color:green; left:0px; top:200px;}
-  100% {background-color:red; left:0px; top:0px;}
-}
-
-.example{
-  position: relative;
-  background-color: red;
-  animation-name: example;
-  animation-duration: 4s;
-  animation-iteration-count: infinite;
-}*/
 
 
 /*Contact*/
@@ -352,8 +337,6 @@ margin-bottom: 30px;
 }
 
 .ContactIcon a, .ContactIcon div{
-  background: none;
-  padding:0px;
   color:white;
   font-size: 2em;
   border-radius: 50%;
@@ -370,18 +353,12 @@ margin-bottom: 30px;
 .ContactIcon a svg, .ContactIcon div svg{
   height: 100%;
 }
-.ContactIcon a svg path, .ContactIcon div svg path{
-  background: none;
-  border:none;
-
-}
 
 
 .ContactMe{
   display: flex;
   justify-content: center;
   align-items: center;
-  transition: opacity 200ms;
 }
 
 .ContactMe > form{
@@ -471,4 +448,12 @@ margin-bottom: 30px;
     background-color: gray;
 }
 
+.basket {
+  transition: opacity 5s;
+  opacity: 1;
+}
+.basket.hide {
+  opacity: 0;
+  pointer-events:none;
+}
 

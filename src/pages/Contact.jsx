@@ -48,7 +48,7 @@ const Contact = () => {
                         </a>
                     </div>
                 </div>
-                {visible && <ContactMe />}
+                {visible && <ContactMe /> }
             </div>
         </div>
        
