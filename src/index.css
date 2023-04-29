@@ -355,6 +355,38 @@ margin-bottom: 30px;
 }
 
 
+
+/*transition of contact ME */
+/*-- Transition exit--*/
+.transition-exit{
+  opacity: 0;
+}
+.transition-exit-active{
+  opacity: 1;
+  transition: opacity 500ms;
+}
+.transition-exit-done{
+  opacity: 1;
+}
+.transition-enter{
+  opacity: 1;
+}
+/*-- Transition Enter--*/
+.transition-enter-active{
+  opacity: 0;
+  transition: opacity 500ms;
+}
+.transition-enter-done{
+  opacity: 0;
+}
+/*--Transition Appear --*/
+.transition-appear{
+  opacity: 0;
+}
+
+
+
+/*-- Contact Me form --*/
 .ContactMe{
   display: flex;
   justify-content: center;
@@ -446,14 +478,5 @@ margin-bottom: 30px;
 }
 .btn-send{
     background-color: gray;
-}
-
-.basket {
-  transition: opacity 5s;
-  opacity: 1;
-}
-.basket.hide {
-  opacity: 0;
-  pointer-events:none;
 }
 

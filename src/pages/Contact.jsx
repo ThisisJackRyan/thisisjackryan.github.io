@@ -4,9 +4,12 @@ import { faInstagram} from '@fortawesome/free-brands-svg-icons';
 import { faGithub} from '@fortawesome/free-brands-svg-icons';
 import { faEnvelope } from '@fortawesome/free-solid-svg-icons';
 import { faDiscord } from '@fortawesome/free-brands-svg-icons';
+import { CSSTransition } from 'react-transition-group';
+
 
 import ContactMe  from './components/ContactMe';
 import { useState } from "react";
+
 
 
 
@@ -23,7 +26,7 @@ const Contact = () => {
 
     return(
     <div>
-        <div className="">
+        <div >
             <div className="PaddingShovePastHeader">
                 <div className="ContactTitle"><span>Contact</span></div>
                 <div className="flex ContactLinkSection">
@@ -47,8 +50,18 @@ const Contact = () => {
                             <FontAwesomeIcon icon={faDiscord} />
                         </a>
                     </div>
-                </div>
-                {visible && <ContactMe /> }
+                </div>{
+                <CSSTransition
+                     in={!visible}
+                     timeout={500}
+                     appear={true}
+                     classNames="transition"
+
+
+                >
+                    <ContactMe /> 
+                </CSSTransition>
+}
             </div>
         </div>
        
