@@ -65,10 +65,7 @@ function Projects(){
         <style>
             {` 
                 body {
-                    background-image: url(${backgroundImage});
-                    background-position: center;
-                    background-repeat: no-repeat;
-                    background-size: cover;
+                    background: linear-gradient(to left, #434343 0%, black 100%);
                 }
             `}
         </style>

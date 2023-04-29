@@ -26,14 +26,11 @@ const Contact = () => {
       <style>
             {` 
                 body {
-                    background-image: url(${backgroundImage});
-                    background-position: center;
-                    background-repeat: no-repeat;
-                    background-size: cover;
+                    background: linear-gradient(to left, #434343 0%, black 100%);     
                 }
             `}
         </style>
-        <div className="example">
+        <div className="">
             <div className="PaddingShovePastHeader">
                 <div className="ContactTitle"><span>Contact</span></div>
                 <div className="flex ContactLinkSection">
@@ -47,10 +44,10 @@ const Contact = () => {
                             <FontAwesomeIcon icon={faGithub} />
                         </a>
                     </div>
-                    <div className="x1 ContactIcon flex center " onClick={handleToggle}>
-                        <a href="#">
+                    <div className="x1 ContactIcon flex center " >
+                        <div onClick={handleToggle}>
                             <FontAwesomeIcon icon={faEnvelope} />
-                        </a>
+                        </div>
                     </div>
                     <div className="x1 ContactIcon flex center ">
                         <a href="https://monkeytype.com/" target="_blank" rel="noreferrer" >
