@@ -470,3 +470,15 @@ margin-bottom: 30px;
     background-color: gray;
 }
 
+/* Discord DropDown*/
+.Dropdown{
+  position: relative;
+  max-width: 300px;
+}
+
+.Dropdown li {
+  border:solid gray 2px;
+  border-radius: 1em;
+  list-style: none;
+  padding: 0.5em;
+}

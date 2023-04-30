@@ -1,14 +1,16 @@
-import Dropdown from 'react-bootstrap/Dropdown';
 
-
+//<FontAwesomeIcon icon={faDiscord} />
+//  Name: TheJackRyan#1929 
 
 const DiscordDropdown = () => {
     return (
-        <Dropdown>
-            <Dropdown.Menu>
-                <Dropdown.Item>Name: TheJackRyan#1929 </Dropdown.Item>
-            </Dropdown.Menu>
-        </Dropdown>  
+        <div className="flex-column Dropdown">
+            <ul>
+                <li>
+                    Name: TheJackRyan#1929  
+                </li>
+            </ul>
+        </div>
     );
 }
 

@@ -8,14 +8,18 @@ import { CSSTransition } from 'react-transition-group';
 
 
 import ContactMe  from './components/ContactMe';
-//import DiscordDropdown from './components/DiscordDropdown';
+import DiscordDropdown from './components/DiscordDropdown';
 import { useState } from "react";
 
 
 
 
 
-
+const dropDown = () => {
+    return (
+        <DiscordDropdown />
+    );
+}
 
 const Contact = () => {
 
@@ -48,17 +52,13 @@ const Contact = () => {
                     </div>
                     <div className="x1 ContactIcon flex center ">
                         <div>
-                        <FontAwesomeIcon icon={faDiscord} onClick={() => {
+                        <FontAwesomeIcon icon={faDiscord}/>
+                        </div>
+                        
                            
-                           /* No Worky
-                           <>
-                            <DiscordDropdown />
-                            </>*/
-                        }} />
                             
                                 
-                            
-                        </div>
+
                         
                     </div>
                 </div>{
@@ -72,7 +72,7 @@ const Contact = () => {
                 >
                     <ContactMe /> 
                 </CSSTransition>
-}
+}               
             </div>
         </div>
        
