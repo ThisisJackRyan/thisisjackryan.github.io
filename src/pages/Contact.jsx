@@ -30,8 +30,8 @@ const Contact = () => {
     }
 
     return(
-    <div>
-        <div >
+    <div className="container">
+        <div>
             <div className="PaddingShovePastHeader">
                 <div className="ContactTitle"><span>Contact</span></div>
                 <div className="flex ContactLinkSection">

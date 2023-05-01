@@ -10,9 +10,9 @@ const Project = ({projects}) => {
                         </div>
                         
                     </div>
-                    <div className="x3"></div>
+                    <div className="x3 break850Projectx3"></div>
                 </div>
-                <div className="flex ">
+                <div className="flex  break850Project">
                     <div className="x2 projectImage">
                         <img src={projects.image} alt={projects.name} />
                     </div>

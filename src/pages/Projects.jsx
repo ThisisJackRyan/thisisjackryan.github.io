@@ -60,8 +60,8 @@ function Projects(){
 
    console.log(mainProjects);
     return( 
-    <div>
-        <div className="PaddingShovePastHeader">
+    <div className="container">
+        <div>
             <div className=" ProjectTitle ">
                 <span>Projects</span>
             </div>
@@ -73,7 +73,7 @@ function Projects(){
                 <div className="highlights flex center"> 
                     <span>Best Languages</span>
                 </div>
-                <div className="flex">
+                <div className="flex break850Project">
                     {
                         miniProjects.Projects.map((project) =>(
                             <div className="x1 Languages">
@@ -83,7 +83,6 @@ function Projects(){
                 </div>
             </div>
         </div>
-
     </div>
     );
 }

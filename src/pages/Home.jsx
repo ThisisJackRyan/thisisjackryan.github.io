@@ -6,7 +6,7 @@ import React from "react"
 
 export default function Home(){
     return(
-    <div>
+    <div className="container">
       <div className="flex article">
         <div className="x2 ">{/* this will be my name followed by a brief description of me using the "aspiring software developer" */}
           <div className="nameTitle flex"><span> Jack Ryan</span></div>{/* I think big blocky-text or squared-text would look great  so far -- Orbitron,  Russo One, Teko, Bebas Neue look great for Jack Ryan on google fonts */}

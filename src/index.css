@@ -38,13 +38,13 @@ body {
 .x8{flex:8;}
 
 .container{
-  padding-top: 90px;
+  max-width: 1500px;
+  padding-top: 100px;
 }
 
 img{
   width: 100%;
 }
-
 
 
 
@@ -239,9 +239,7 @@ margin-bottom: 30px;
   transform: translateY(-5px);
 }
 
-.PaddingShovePastHeader{
-  padding-top:100px;
-}
+
 
 
 .projectImage{
@@ -329,12 +327,26 @@ margin-bottom: 30px;
   box-shadow: 0px 20px 40px rgba(0, 0, 0, 0.75);
 }
 
+/*Break Point Project.jsx*/
+
+@media screen and (max-width: 850px){
+  .break850Project{
+    flex-direction: column;
+  }
+  .break850Projectx3{
+    display: none;
+  }
+}
 /*Contact.jsx*/ 
 /*Contact Icons and title*/
 .ContactTitle{
   font-family: Play;
   font-size: 3em;
   text-align: center;
+  display:flex;
+  justify-content: center;
+  align-items: center;
+  
 }
 .ContactTitle span{
   border-bottom: solid gray 2px;
@@ -349,7 +361,6 @@ margin-bottom: 30px;
   border-radius: 50%;
   box-shadow: 0px 20px 40px rgba(255, 255, 255, 0.3);
   transition: all ease 0.25s;
-
 }
 
 .ContactIcon a:hover, .ContactIcon div:hover{
@@ -481,4 +492,20 @@ margin-bottom: 30px;
   border-radius: 1em;
   list-style: none;
   padding: 0.5em;
+}
+
+
+/*--Break Point Contact.jsx*/
+@media screen and (max-width: 850px){
+  .ContactLinkSection{
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+    
+  }
+  .ContactIcon {
+    padding:2em;
+    
+  }
 }
