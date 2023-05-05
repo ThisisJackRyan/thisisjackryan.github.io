@@ -3,13 +3,15 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faInstagram} from '@fortawesome/free-brands-svg-icons';
 import { faGithub} from '@fortawesome/free-brands-svg-icons';
 import { faEnvelope } from '@fortawesome/free-solid-svg-icons';
-import { faDiscord } from '@fortawesome/free-brands-svg-icons';
+
 import { CSSTransition } from 'react-transition-group';
 
 
 import ContactMe  from './components/ContactMe';
 import DiscordDropdown from './components/DiscordDropdown';
 import { useState } from "react";
+
+{/*import { faDiscord } from '@fortawesome/free-brands-svg-icons';*/}
 
 
 
@@ -50,6 +52,7 @@ const Contact = () => {
                             <FontAwesomeIcon icon={faEnvelope} />
                         </div>
                     </div>
+                    {/*
                     <div className="x1 ContactIcon flex center ">
                         <div>
                         <FontAwesomeIcon icon={faDiscord}/>
@@ -61,6 +64,7 @@ const Contact = () => {
 
                         
                     </div>
+    */}
                 </div>{
                 <CSSTransition
                      in={!visible}

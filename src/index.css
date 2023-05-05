@@ -359,13 +359,13 @@ margin-bottom: 30px;
   color:white;
   font-size: 2em;
   border-radius: 50%;
-  box-shadow: 0px 20px 40px rgba(255, 255, 255, 0.3);
+  filter: drop-shadow(0px 20px 40px rgba(255, 255, 255, 1));
   transition: all ease 0.25s;
 }
 
 .ContactIcon a:hover, .ContactIcon div:hover{
   transform: scale(0.85);
-  box-shadow: 0px 20px 40px rgba(0, 0, 0, 1);
+  filter: drop-shadow(0px 20px 40px rgba(0, 0, 0, 1));
 }
 
 .ContactIcon a svg, .ContactIcon div svg{
