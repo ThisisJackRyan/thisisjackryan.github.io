@@ -154,44 +154,20 @@ margin-bottom: 30px;
 
 /*GoFundMe*/
 
-.funFact{
-  justify-content: center;
-  font-size: 2em;
-  font-size: 4em;
-  align-items: center;
-  text-shadow: 5px 5px gray;
-  font-family: Play;
-  color:white;
-
-}
-
-.quickFunFact{
-  border:solid gray 2px;
-  border-radius: 5px;
-  text-align: center;
-  font-size: 2em;
-  margin:2%;
-  color: white;
-  background-color: rgba(0,0,0,.7);
-}
-
-.arrow{
-  font-size: 8em;
-  align-items: center;
-  justify-content: center;
-
-}
 
 #gofundmelink {
   font-size: 4em;
   justify-content: center;
- 
 }
-#gofundmelink .link {
+#gofundmelink a{
+  color: white;
+  transition: all ease 0.5s;
   margin-bottom:2px;
+  text-decoration: none;
 }
 
-#gofundmelink .link:hover{
+#gofundmelink a:hover{
+  transform: scale(.75);
   margin-bottom: 0px;
 }
 
