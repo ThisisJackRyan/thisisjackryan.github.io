@@ -1,10 +1,15 @@
 
-const Languages = ({projects}) => {
+
+
+
+const Languages = ({projects, handleClick}) => {
+    
+
     return (
         <div className="Language">
             <div>
                 <div>
-                    <div className="LanguageImage">
+                    <div className="LanguageImage" onClick ={handleClick}>
                         <img src={projects.image} alt={projects.name} />
                     </div>
                 </div>

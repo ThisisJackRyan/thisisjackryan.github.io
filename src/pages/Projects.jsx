@@ -1,7 +1,8 @@
-
-//import vertigoImage from "./images/vertigo.avif"
 import Project from './components/Project';
 import Languages from "./components/Languages";
+import { useRef } from "react";
+
+
 
 
 
@@ -58,11 +59,16 @@ function Projects(){
     }
 
 
-   console.log(mainProjects);
+    const ref = useRef(null);
+
+    const handleClick = () => {
+      ref.current?.scrollIntoView({behavior: 'smooth'});
+    }
+
     return( 
     <div className="container">
         <div>
-            <div className=" ProjectTitle ">
+            <div className=" ProjectTitle " ref={ref} >
                 <span>Projects</span>
             </div>
             
@@ -71,13 +77,13 @@ function Projects(){
                 ))}
             <div>
                 <div className="highlights flex center"> 
-                    <span>Best Languages</span>
+                    <span>My Best Languages</span>
                 </div>
                 <div className="flex break850Project">
                     {
                         miniProjects.Projects.map((project) =>(
                             <div className="x1 Languages">
-                                <Languages projects={project} />
+                                <Languages projects={project} handleClick={handleClick} />
                             </div>
                     ))}
                 </div>

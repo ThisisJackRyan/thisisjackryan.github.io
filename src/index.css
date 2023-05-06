@@ -120,8 +120,9 @@ color:white;
 }
 
 .nameTitle span{
-border-bottom: dotted black 3px;
-margin-bottom: 30px;
+border-bottom: dotted gray 3px;
+padding: 0px;
+margin-bottom: 25px;
 }
 
 
