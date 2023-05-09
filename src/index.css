@@ -65,8 +65,14 @@ img{
   width: 100%;
 }
 
-.headerPic img{
-  width:120px;
+.myHeaderLogo{
+  margin-left:0.25em;
+  font-family: Play;
+  font-size: 5em;
+}
+
+.myHeaderLogo #Right{
+  margin-left:-12px;
 }
 
 .headerTitle{
