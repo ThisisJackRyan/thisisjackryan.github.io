@@ -1,4 +1,3 @@
-import logo from './pages/images/logo.svg';
 import "./index.css";
 import {Link} from "react-router-dom"
 
@@ -10,6 +9,7 @@ export default function Header(){
             <div className="flex">
                 <div className="x2 headerPic">
                     <span className='myHeaderLogo'>
+                        
                         <span id='Left'>J</span>
                         <span id='Right'>R</span>
                     </span>
