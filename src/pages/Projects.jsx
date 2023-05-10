@@ -16,7 +16,7 @@ function Projects(){
                 "name": "FSVR Changing Arena",
                 "image": require("./images/vertigo.avif"),
                 "gitHub": "https://github.com/ThisisJackRyan/FSVR-Changing-Arena",
-                "video": null,
+                "video": require("./images/Videos/FSVRChangingArena.mp4"),
                 "descriptions":["At FlipSwitch VR we use a software called Haze, which host our games and sends the data out to the other headsets. The goal of this program was to move the Players and their respective machineGuids to the other arena.", 'The part I enjoy about this simple but functional code is that it is my first "Real Life" example of how you can optimize your life with code. While this only saves the host 30 seconds, this is able to run over and over for years to come.']
             },
             {
