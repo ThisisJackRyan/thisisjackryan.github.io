@@ -23,7 +23,7 @@ function Projects(){
                 "name": "Instagram Uploading Bot",
                 "image": require("./images/instagramUpload.png"),
                 "gitHub": "https://github.com/ThisisJackRyan/InstagramUploadBot",
-                "video": null,
+                "video": require("./images/Videos/InstagramBotVideo.mp4"),
                 "descriptions":["This Program is written in python and uploads picture to instagram. My Instagram Bot uses the selenium 4.7.2 to navigate the login and upload process.", "The majority of my Code is in login and mainPage using Tkinter. Where I have created a basic UI to manage several Instagram accounts.", "My future plan with this is to add more sites to post on. I also want to incorporate machine learning so that a web Scrapper will be able to take an image and decide if it is visually pleasing enough to post."]
             },
             {
