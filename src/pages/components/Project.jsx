@@ -1,6 +1,9 @@
+import HoverVideoPlayer from 'react-hover-video-player';
 
 
 const Project = ({projects}) => {
+
+
     return (
         <div className="projectSection">
                 <div className="flex">
@@ -14,7 +17,30 @@ const Project = ({projects}) => {
                 </div>
                 <div className="flex  break850Project">
                     <div className="x2 projectImage">
-                        <img src={projects.image} alt={projects.name} />
+                    {
+                    projects.video !== null ? (
+                        
+                        <HoverVideoPlayer
+                            videoSrc={projects.video}
+                            pausedOverlay={
+                                <img src={projects.image} alt={projects.name} 
+                                style={{
+                                    // Make the image expand to cover the video's dimensions
+                                    width: '100%',
+                                    height: '100%',
+                                    objectFit: 'cover',
+                                }}
+                                />
+                            }
+                            loadingOverlay={
+                                <div className="loading-overlay">
+                                <div className="loading-spinner" />
+                                </div>
+                            }   
+                        />
+                    ) : <img src={projects.image} alt={projects.name} />
+                     }
+                        
                     </div>
                     <div className="ReadMe x3 flex center middle">
                         <div >
