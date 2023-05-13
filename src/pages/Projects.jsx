@@ -17,28 +17,28 @@ function Projects(){
                 "image": require("./images/vertigo.avif"),
                 "gitHub": "https://github.com/ThisisJackRyan/FSVR-Changing-Arena",
                 "video": require("./images/Videos/FSVRChangingArena.mp4"),
-                "descriptions":["At FlipSwitch VR we use a software called Haze, which host our games and sends the data out to the other headsets. The goal of this program was to move the Players and their respective machineGuids to the other arena.", 'The part I enjoy about this simple but functional code is that it is my first "Real Life" example of how you can optimize your life with code. While this only saves the host 30 seconds, this is able to run over and over for years to come.']
+                "descriptions":["At FlipSwitch VR, we utilize software called Haze to facilitate game hosting and data transmission to other headsets. The objective of this script was to transfer Players and their corresponding machineGuids to the alternate arena.", 'The part I enjoy about this simple but functional script is that it is my first "Real Life" example of how you can optimize your life with code. Although it may seem like a mere 30-second time-saving for the host, this code can be repeatedly executed for years to come.']
             },
             {
                 "name": "Instagram Uploading Bot",
                 "image": require("./images/instagramUpload.png"),
                 "gitHub": "https://github.com/ThisisJackRyan/InstagramUploadBot",
                 "video": require("./images/Videos/InstagramBotVideo.mp4"),
-                "descriptions":["This Program is written in python and uploads picture to instagram. My Instagram Bot uses the selenium 4.7.2 to navigate the login and upload process.", "The majority of my Code is in login and mainPage using Tkinter. Where I have created a basic UI to manage several Instagram accounts.", "My future plan with this is to add more sites to post on. I also want to incorporate machine learning so that a web Scrapper will be able to take an image and decide if it is visually pleasing enough to post."]
+                "descriptions":["This coding project written in Python involves uploading pictures to Instagram. The program utilizes Selenium 4.7.2 for handling the login and upload process.", 'The main components of my code are the "login" and "mainPage" functions, implemented using Tkinter. I have designed a simple user interface (UI) to manage multiple Instagram accounts.', "Moving forward, I have several plans for this project. Firstly, I aim to expand its functionality by integrating support for additional social media platforms. Additionally, I intend to incorporate machine learning capabilities, enabling a web scraper to analyze images and determine their suitability for posting based on visual appeal."]
             },
             {
                 "name": "Hawklet Express Website",
                 "image": require("./images/HawkletExpress.png"),
                 "gitHub": "https://github.com/ThisisJackRyan/Hawklet-Express-website",
                 "video": null,
-                "descriptions":["My School is opening a Breakfast Cafe. I decided to make a website for it so that online orders can be taken.","This website is made using Html, JavaScript, and Css. The Hawklet Express website was my first big web project that catapulted me into my interest of web design. I made in congruency with my Webpage design class. I also presented this to my class and each time they would critique and help me make a better version. This was my final version when the semester ended and to view it I have a gh-pages set up on my github. ","I am using the font Jupiter Pro. Which is Rockhurst Highschool Font. The only issue is that the 'A' doesn't have the middle cross bar. I fixed it by using the lower case alpha 'α'. This doesn't always work on all devices for some reason. I would change the font but this is what my teacher said looked best for Rockhurst."]
+                "descriptions":["I created a website for my school's new Breakfast Cafe to facilitate online orders. ","The website is built using Html, JavaScript, and CSS. The Hawklet Express website marked my first significant web project, sparking my interest in web design. I developed it in parallel with my Webpage design class, where I presented it for feedback and improvements. This version represents the final iteration at the end of the semester, and you can view it through my gh-pages on GitHub.","For the design, I utilized the Jupiter Pro font, which is the official font of Rockhurst High School. However, there is a minor issue with the letter 'A' lacking the middle crossbar. To address this, I substituted it with the lowercase alpha 'α'. Please note that this workaround may not be compatible with all devices. Although I would consider changing the font, my teacher suggested that it visually aligns best with Rockhurst's style."]
             },
             {
                 "name": "First-Unity-game",
                 "image": require("./images/unityVr.webp"),
                 "gitHub": "https://github.com/ThisisJackRyan/Hawklet-Express-website",
                 "video": require("./images/Videos/VRVideo.mov"),
-                "descriptions":["This was my first VR game not following a tutorial. I made this in about a week or so. This game is a target practice game where you are given different Guns to shoot different sized Targets.","Hover over the image to watch a video of me playing it!","The hardest part was trying to figure how to actually fire a laser when you pull the trigger, but with some time and scripting I figure it out. I just made a prefab of a laser and when the trigger is pulled I spawn a clone and tell it to move forward."]
+                "descriptions":["This VR game I created was my first independent project, without following any tutorials. It took me approximately a week to develop. The game revolves around target practice, offering players various guns to shoot at targets of different sizes.","To see game-play footage, simply hover over the image!","The most challenging aspect was determining how to simulate a laser-firing when the player pulls the trigger. However, after investing some time in scripting, I managed to solve it. I created a laser prefab and programmed it to spawn a clone and move forward whenever the trigger is pulled."]
             }
         ]
     }
