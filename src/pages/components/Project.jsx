@@ -1,9 +1,15 @@
+import { useState } from 'react';
 import HoverVideoPlayer from 'react-hover-video-player';
+
 
 
 const Project = ({projects}) => {
 
+    const [isActive, setActive] = useState(false);
 
+    const toggleClass = () => {
+        setActive(!isActive);
+    };
     return (
         <div className="projectSection">
                 <div className="flex">
@@ -43,7 +49,7 @@ const Project = ({projects}) => {
                         
                     </div>
                     
-                    <div className='ReadMore'>
+                    <div className={isActive ? 'ReadMore ON' : 'ReadMore'} onClick={toggleClass}>
                         <div>
                             <span>{projects.descriptions[0]}</span>
                             <br />
@@ -54,7 +60,7 @@ const Project = ({projects}) => {
                             
                         </div>
                     </div>
-                    <div className="ReadMe x3 flex center middle">
+                    <div className={isActive ? 'ReadMe ReadMeOn x3 flex center middle' : 'ReadMe x3 flex center middle'}>
                         <div >
                             
                                 {
@@ -72,6 +78,12 @@ const Project = ({projects}) => {
                                 <a href={projects.gitHub} target="_blank" rel="noreferrer">
                                     <span>To learn more click the link to my github</span>
                                 </a>
+                            </div>
+                            <div className={isActive ? 'close flex center middle ' : "ON"}>
+                                <br />
+                                <br />
+                                <br />
+                                <span  onClick={toggleClass}>close...</span>
                             </div>
                         </div>
                     </div>

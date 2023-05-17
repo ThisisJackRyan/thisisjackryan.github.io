@@ -243,6 +243,12 @@ margin-bottom: 25px;
   box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.3);
  
 }
+.close{
+  display: none;
+}
+.ON{
+  display:none;
+}
 
 .ReadMe:hover, .ReadMore:hover {
   transform: translateY(-10px);
@@ -494,12 +500,19 @@ margin-bottom: 25px;
     display: flex;
     margin:1em;
   }
-  .ReadMore:hover + .ReadMe{
+  .ReadMeOn{
     display: flex;
     margin:1em;
   }
-  .ReadMore:hover {
+  .ON{
     display: none;
+  }
+  .close{
+    display: flex;
+    color: lightgray;
+    padding:0px;
+    margin:0px;
+    
   }
 }
 
