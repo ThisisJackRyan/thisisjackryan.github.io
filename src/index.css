@@ -188,7 +188,7 @@ margin-bottom: 25px;
   text-decoration: none;
 }
 
-.LinkToGit a span{
+.LinkToGit a span, .LinkToGit span{
   border-bottom: solid white 2px;
   padding-bottom: 1px;
 }
@@ -230,7 +230,7 @@ margin-bottom: 25px;
   align-items: center;
   justify-content: center;
 }
-.ReadMe{
+.ReadMe, .ReadMore{
   font-family: "Lucida Console", "Courier New", monospace;
   margin:3em;
   text-align: center;
@@ -244,10 +244,15 @@ margin-bottom: 25px;
  
 }
 
-.ReadMe:hover {
+.ReadMe:hover, .ReadMore:hover {
   transform: translateY(-10px);
   box-shadow: 0px 20px 40px rgba(0, 0, 0, 0.75);
 }
+
+.ReadMore{
+  display: none;
+}
+
 
 
 .projectSection{
@@ -312,16 +317,7 @@ margin-bottom: 25px;
 
 
 
-/*Break Point Project.jsx*/
 
-@media screen and (max-width: 850px){
-  .break850Project{
-    flex-direction: column;
-  }
-  .break850Projectx3{
-    display: none;
-  }
-}
 /*Contact.jsx*/ 
 /*Contact Icons and title*/
 .ContactTitle{
@@ -477,6 +473,34 @@ margin-bottom: 25px;
   border-radius: 1em;
   list-style: none;
   padding: 0.5em;
+}
+
+/*-- Break points -- */
+
+/*Break Point Project.jsx*/
+@media screen and (max-width: 1200px){
+  .break1200Project{
+    flex-direction: column;
+  }
+  .break1200Projectx3{
+    display: none;
+  }
+}
+@media screen and (max-width: 850px){
+  .ReadMe{
+    display: none;
+  }
+  .ReadMore{
+    display: flex;
+    margin:1em;
+  }
+  .ReadMore:hover + .ReadMe{
+    display: flex;
+    margin:1em;
+  }
+  .ReadMore:hover {
+    display: none;
+  }
 }
 
 

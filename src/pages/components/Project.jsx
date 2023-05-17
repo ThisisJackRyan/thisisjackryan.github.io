@@ -13,9 +13,9 @@ const Project = ({projects}) => {
                         </div>
                         
                     </div>
-                    <div className="x3 break850Projectx3"></div>
+                    <div className="x3 break1200Projectx3"></div>
                 </div>
-                <div className="flex  break850Project">
+                <div className="flex  break1200Project">
                     <div className="x2 projectImage">
                     {
                     projects.video !== null ? (
@@ -42,11 +42,22 @@ const Project = ({projects}) => {
                      }
                         
                     </div>
+                    
+                    <div className='ReadMore'>
+                        <div>
+                            <span>{projects.descriptions[0]}</span>
+                            <br />
+                            <br />
+                            <div className='LinkToGit'>
+                                <span className="pleaseReadMore">Tap to read more...</span>
+                            </div>
+                            
+                        </div>
+                    </div>
                     <div className="ReadMe x3 flex center middle">
                         <div >
                             
                                 {
-                                //console.log(projects.descriptions)
 
                                 projects.descriptions.map((line) => (
                                     <>

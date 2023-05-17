@@ -86,7 +86,7 @@ function Projects(){
                 <div className="highlights flex center"> 
                     <span>My Best Languages</span>
                 </div>
-                <div className="flex break850Project">
+                <div className="flex break1200Project">
                     {
                         miniProjects.Projects.map((project) =>(
                             <div className="x1 Languages">
