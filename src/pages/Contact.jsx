@@ -52,19 +52,6 @@ const Contact = () => {
                             <FontAwesomeIcon icon={faEnvelope} />
                         </div>
                     </div>
-                    {/*
-                    <div className="x1 ContactIcon flex center ">
-                        <div>
-                        <FontAwesomeIcon icon={faDiscord}/>
-                        </div>
-                        
-                           
-                            
-                                
-
-                        
-                    </div>
-    */}
                 </div>{
                 <CSSTransition
                      in={!visible}

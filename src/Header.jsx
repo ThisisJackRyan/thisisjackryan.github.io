@@ -25,13 +25,14 @@ export default function Header(){
                 </div>
                 <div className="x1 flex headerTitle"><Link className="link" to="/">ThisisJackRyan.com</Link> </div>
                 <div className={menuOpen ? "flex nav x2" : "nav nav-smashed"}>
-                    <div onClick={toggleMenu}><Link className="link" to="/Projects">Projects</Link></div>
-                    <div onClick={toggleMenu}><Link className="link" to="/GoFundMe">GoFundMe</Link></div>
-                    <div onClick={toggleMenu}><Link className="link" to="/Contact">Contact</Link></div>
+                    <div className="big" onClick={menuOpen ? null : toggleMenu}><Link className="link" to="/">Home</Link></div>
+                    <div onClick={menuOpen ? null : toggleMenu}><Link className="link" to="/Projects">Projects</Link></div>
+                    <div onClick={menuOpen ? null : toggleMenu}><Link className="link" to="/GoFundMe">GoFundMe</Link></div>
+                    <div onClick={menuOpen ? null : toggleMenu}><Link className="link" to="/Contact">Contact</Link></div>
                 </div>
-                <div className="x2 go"></div>
-                <div className="hamburger x2">
-                    {menuOpen ? <FontAwesomeIcon icon={faBars} onClick={toggleMenu}/> : <FontAwesomeIcon icon={faXmark} onClick={toggleMenu}/>}
+                <div className="x2 go" ></div>
+                <div className="hamburger x2" >
+                    {menuOpen ? <FontAwesomeIcon icon={faBars} onClick={toggleMenu} /> : <FontAwesomeIcon icon={faXmark} onClick={toggleMenu} />}
                        
                     
                 </div>
