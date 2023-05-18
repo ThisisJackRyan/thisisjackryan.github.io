@@ -54,8 +54,6 @@ img{
 .nav{
   justify-content: space-evenly;
   align-items: center;
- 
-   
 }
 
 .header{
@@ -89,6 +87,15 @@ img{
 .link:hover{ 
   color:white;
   border-bottom: solid white 2px;
+}
+.nav{
+  transition: all ease 0.3s;
+}
+.hamburger{
+  display: none;
+}
+.go{
+  display: none;
 }
 
 
@@ -483,6 +490,7 @@ margin-bottom: 25px;
 
 /*-- Break points -- */
 
+
 /*Break Point Project.jsx*/
 @media screen and (max-width: 1200px){
   .break1200Project{
@@ -492,7 +500,49 @@ margin-bottom: 25px;
     display: none;
   }
 }
+
+
+
+
+
 @media screen and (max-width: 850px){
+  /*Break Point Header.jsx */
+  
+  
+  .nav{
+    display: none;
+  }
+  .nav-smashed{
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    background-color: red;
+    top:0;
+    right:0;
+    left:0;
+    bottom:0;
+    justify-content: center;
+    align-items: center;
+    font-size: 2em;
+    gap: 1em;
+  }
+  .go{
+    display: flex;
+  }
+  .hamburger{
+    display: flex;
+    position: absolute;
+    top:0;
+    right:0;
+    left:0;
+    bottom:0;
+    justify-content: right;
+    align-items: center;
+    font-size: 2em;
+    padding: 1em;
+  }
+  /*Break Point Project.jsx*/
   .ReadMe{
     display: none;
   }
@@ -514,11 +564,8 @@ margin-bottom: 25px;
     margin:0px;
     
   }
-}
 
-
-/*--Break Point Contact.jsx*/
-@media screen and (max-width: 850px){
+  /*Break Point Contact.jsx*/
   .ContactLinkSection{
     flex-direction: column;
     justify-content: center;
@@ -531,3 +578,5 @@ margin-bottom: 25px;
     
   }
 }
+
+

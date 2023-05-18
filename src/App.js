@@ -16,6 +16,7 @@ function App() {
         <Route  path="/Projects" element={<Projects />} />
         <Route  path="/GoFundMe" element={<GoFundMe />} />
         <Route  path="/Contact" element={<Contact />} />
+        
      </Routes>
     </div>
    
