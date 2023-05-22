@@ -4,7 +4,6 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import {faBars, faXmark} from "@fortawesome/free-solid-svg-icons"
 import { useState } from "react";
 
-//<img src={logo} className="" alt="" />
 
 export default function Header(){
 
@@ -30,11 +29,9 @@ export default function Header(){
                     <div onClick={menuOpen ? null : toggleMenu}><Link className="link" to="/GoFundMe">GoFundMe</Link></div>
                     <div onClick={menuOpen ? null : toggleMenu}><Link className="link" to="/Contact">Contact</Link></div>
                 </div>
-                <div className="x2 go" ></div>
-                <div className="hamburger x2" >
+                <div className="go x2"></div>
+                <div className="hamburger" >
                     {menuOpen ? <FontAwesomeIcon icon={faBars} onClick={toggleMenu} /> : <FontAwesomeIcon icon={faXmark} onClick={toggleMenu} />}
-                       
-                    
                 </div>
                     
             </div>
