@@ -3,25 +3,12 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faInstagram} from '@fortawesome/free-brands-svg-icons';
 import { faGithub} from '@fortawesome/free-brands-svg-icons';
 import { faEnvelope } from '@fortawesome/free-solid-svg-icons';
-
 import { CSSTransition } from 'react-transition-group';
-
-
 import ContactMe  from './components/ContactMe';
-import DiscordDropdown from './components/DiscordDropdown';
 import { useState } from "react";
 
-{/*import { faDiscord } from '@fortawesome/free-brands-svg-icons';*/}
 
 
-
-
-
-const dropDown = () => {
-    return (
-        <DiscordDropdown />
-    );
-}
 
 const Contact = () => {
 
@@ -37,17 +24,17 @@ const Contact = () => {
             <div className="PaddingShovePastHeader">
                 <div className="ContactTitle"><span>Contact</span></div>
                 <div className="flex ContactLinkSection">
-                    <div className="x1 ContactIcon flex center ">
+                    <div className="x1 ContactIcon ">
                         <a href="https://www.instagram.com/thisisjackryan/" target="_blank" rel="noreferrer" >
                             <FontAwesomeIcon icon={faInstagram} />
                         </a>
                     </div>
-                    <div className="x1 ContactIcon flex center ">
+                    <div className="x1 ContactIcon ">
                         <a href="https://github.com/ThisisJackRyan" target="_blank" rel="noreferrer" >
                             <FontAwesomeIcon icon={faGithub} />
                         </a>
                     </div>
-                    <div className="x1 ContactIcon flex center " >
+                    <div className="x1 ContactIcon " >
                         <div onClick={handleToggle}>
                             <FontAwesomeIcon icon={faEnvelope} />
                         </div>
@@ -58,8 +45,6 @@ const Contact = () => {
                      timeout={500}
                      appear={true}
                      classNames="transition"
-
-
                 >
                     <ContactMe /> 
                 </CSSTransition>

@@ -218,25 +218,27 @@ margin-bottom: 25px;
 }
 
 .TitleOfProject{
+  display: flex;
+  justify-content: center;
   font-family: Play;
-  font-size: 3em;
+  font-size: 2.5em;
   text-align: center;
+  
+  
   
 }
 .TitleOfProject a{
-    transition: all ease 0.5s;
+  transition: all ease 0.5s;
 }
-.TitleOfProject span{
-    border-bottom:solid white 2px;
-    padding-bottom:0px;
-    
-}
+
 .TitleOfProject a:hover{
   transform: translateY(-5px);
 }
 
 
-
+.break1200Projectx3{
+  margin-left: 8em;
+}
 
 .projectImage{
   display:flex;
@@ -354,7 +356,10 @@ margin-bottom: 25px;
 .ContactLinkSection{
   margin: 3em;
 }
-
+.ContactIcon{
+  display: flex;
+  justify-content: center;
+}
 .ContactIcon a, .ContactIcon div{
   color:white;
   font-size: 2em;
@@ -496,15 +501,31 @@ margin-bottom: 25px;
 /*-- Break points -- */
 
 
-/*Break Point Project.jsx*/
+
 @media screen and (max-width: 1200px){
+  /*Break Point Project.jsx*/
   .break1200Project{
     flex-direction: column;
   }
   .break1200Projectx3{
     display: none;
   }
+
+
+  
 }
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -577,12 +598,16 @@ margin-bottom: 25px;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    
+    gap:2em;
     
   }
   .ContactIcon {
     padding:2em;
-    
+    justify-content: left;
+  }
+  .ContactIcon a svg, .ContactIcon div svg{
+    position: relative;
+    left:-.65em;
   }
 }
 

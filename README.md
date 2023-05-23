@@ -7,8 +7,7 @@ This was my first ever React Project, here I plan to continuously update the web
 I really enjoy front-end design! 
 
 
-To Check out what I have so far click these links 
-I have two because I and still having an issues with my domain (One should work). will be fixed soon.
+To Check out what I have so far click this link 
+soon.
 https://www.thisisjackryan.com/
-or
- https://thisisjackryan.github.io/
+

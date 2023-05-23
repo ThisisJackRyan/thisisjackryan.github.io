@@ -13,11 +13,8 @@ const Project = ({projects}) => {
     return (
         <div className="projectSection">
                 <div className="flex">
-                    <div className="x2">
-                        <div className="flex center TitleOfProject LinkToGit">
-                            <a href={projects.gitHub} target="_blank" rel="noreferrer">{projects.name}</a>
-                        </div>
-                        
+                    <div className="x2 TitleOfProject LinkToGit">
+                        <a href={projects.gitHub} target="_blank" rel="noreferrer">{projects.name}</a>
                     </div>
                     <div className="x3 break1200Projectx3"></div>
                 </div>
