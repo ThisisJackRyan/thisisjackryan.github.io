@@ -24,7 +24,7 @@ const ContactMe = () => {
     return(
         <div className="ContactMe">
                     <form ref={form} onSubmit={sendEmail}>
-                        <div className="flex">
+                        <div className="flex NameEmail">
                             <div className="name input flex-reverse-column">
                                 <input type="text" name="user_name" placeholder="Jack Ryan" required />
                                 <span>Name</span>

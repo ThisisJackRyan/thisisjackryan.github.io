@@ -9,7 +9,15 @@ export default function Home(){
     <div className="container">
       <div className="flex article">
         <div className="x2 info">
-          <div className="nameTitle flex"><span> <span className="Jack">Jack</span> <span className="Ryan">Ryan</span>  </span></div>
+          <div className="nameTitle flex">
+            <span> 
+              <span className="Jack">Jack</span> 
+              <span className="Ryan">Ryan</span>  
+            </span>
+            <div className="x2 homePicture add850">
+              <img src={PictureOfJack} alt="" />
+            </div>
+          </div>
           <div className="quickDescription">
           Hello, my name is Jack Ryan, and I am an aspiring Software Developer.
           When I'm not busy coding, you can find me outdoors, camping, and rock-climbing. 
@@ -19,7 +27,7 @@ export default function Home(){
             
           </div>
         </div>
-        <div className="x2 homePicture">
+        <div className="x2 homePicture cut850">
           <img src={PictureOfJack} alt="" />
         </div>
       </div>
