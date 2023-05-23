@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/static/css/main.b07b137a.css",
-    "main.js": "/static/js/main.82d6f43e.js",
+    "main.css": "/static/css/main.2c095ed7.css",
+    "main.js": "/static/js/main.0ddb493a.js",
     "static/js/787.2c70b01d.chunk.js": "/static/js/787.2c70b01d.chunk.js",
     "static/media/VRVideo.mov": "/static/media/VRVideo.aee17f98f6826cbef74e.mov",
     "static/media/HawkletExpress.png": "/static/media/HawkletExpress.0c7f27fc6aaca9f33531.png",
@@ -16,12 +16,12 @@
     "static/media/Python.jpg": "/static/media/Python.42e3596a28f2e2759e3f.jpg",
     "static/media/vertigo.avif": "/static/media/vertigo.afb022bbf1831bec90b4.avif",
     "index.html": "/index.html",
-    "main.b07b137a.css.map": "/static/css/main.b07b137a.css.map",
-    "main.82d6f43e.js.map": "/static/js/main.82d6f43e.js.map",
+    "main.2c095ed7.css.map": "/static/css/main.2c095ed7.css.map",
+    "main.0ddb493a.js.map": "/static/js/main.0ddb493a.js.map",
     "787.2c70b01d.chunk.js.map": "/static/js/787.2c70b01d.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.b07b137a.css",
-    "static/js/main.82d6f43e.js"
+    "static/css/main.2c095ed7.css",
+    "static/js/main.0ddb493a.js"
   ]
 }
