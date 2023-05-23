@@ -511,6 +511,40 @@ margin-bottom: 25px;
     display: none;
   }
 
+  /*Break Point Home.jsx*/
+  .article{
+    /*flex-direction: column-reverse;*/
+  }
+  .article {
+    position: relative;
+  }
+  .article .info{
+    position: absolute;
+    z-index: 1;
+    bottom: 0;
+    left: 0;
+    right:0;
+    top:0;
+
+  }
+  .quickDescription{
+    margin: 2em;
+    margin-top: 11em;
+  }
+  .homePicture{
+    position: absolute;
+    z-index: -1;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right:0;
+    height: 62.5em;
+    overflow: hidden;
+  }
+
+  .homePicture img {
+    
+  }
 
   
 }
