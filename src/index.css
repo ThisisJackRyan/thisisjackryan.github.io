@@ -138,7 +138,7 @@ color:white;
 
 }
 
-.nameTitle span{
+.nameTitle>span{
 border-bottom: dotted gray 3px;
 padding: 0px;
 margin-bottom: 25px;
@@ -512,9 +512,6 @@ margin-bottom: 25px;
   }
 
   /*Break Point Home.jsx*/
-  .article{
-    /*flex-direction: column-reverse;*/
-  }
   .article {
     position: relative;
   }
@@ -541,11 +538,6 @@ margin-bottom: 25px;
     height: 62.5em;
     overflow: hidden;
   }
-
-  .homePicture img {
-    
-  }
-
   
 }
 
@@ -643,6 +635,50 @@ margin-bottom: 25px;
     position: relative;
     left:-.65em;
   }
+
+
+  /*Break Point Home.jsx*/
+  .article .info{
+    position: relative;
+    
+  }
+  .nameTitle{
+    margin-bottom: 0;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    top: 0;
+    bottom: 0;
+    left: -.25em;
+    right:0;
+    width:50%;
+    height: 31.25rem;
+  }
+  .nameTitle>span{
+    border: none;
+  }
+  .Jack, .Ryan{
+    display: block;
+    
+
+  }
+  .quickDescription{
+    margin: 1em;
+  }
+  .homePicture{
+    width: 50%;
+    top: 0;
+    bottom: 0;
+    left: 21em;
+    right:0;
+    height: 31.25rem;
+    margin:0;
+    border:none;
+    overflow: hidden;
+  }
+
+ 
 }
 
 
