@@ -19,11 +19,11 @@ export default function Home(){
             </div>
           </div>
           <div className="quickDescription">
-          Hello, my name is Jack Ryan, and I am an aspiring Software Developer.
+          Hello, my name is Jack Ryan, and I am an aspiring Software Engineer.
           When I'm not busy coding, you can find me outdoors, camping, and rock-climbing. 
-          I'm 18 and am majoring in Computer Science at K-state. 
-          I currently work at a VR shop in the heart of downtown Kansas City.
-          It's been a blast combining my passion for technology with real-world experiences.
+          I'm 19 and am majoring in Computer Science at K-state. 
+          Currently I am working at Canopy, the public benefit Company as a Student Software Engineer. 
+          This opportunity has been great to finally get some hands-on experience, and really enhance my skills as a Software Engineer. 
             
           </div>
         </div>

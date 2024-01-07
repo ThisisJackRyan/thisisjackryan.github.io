@@ -1,6 +1,6 @@
 
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faInstagram} from '@fortawesome/free-brands-svg-icons';
+import { faLinkedin} from '@fortawesome/free-brands-svg-icons';
 import { faGithub} from '@fortawesome/free-brands-svg-icons';
 import { faEnvelope } from '@fortawesome/free-solid-svg-icons';
 import { CSSTransition } from 'react-transition-group';
@@ -25,8 +25,8 @@ const Contact = () => {
                 <div className="ContactTitle"><span>Contact</span></div>
                 <div className="flex ContactLinkSection">
                     <div className="x1 ContactIcon ">
-                        <a href="https://www.instagram.com/thisisjackryan/" target="_blank" rel="noreferrer" >
-                            <FontAwesomeIcon icon={faInstagram} />
+                        <a href="https://www.linkedin.com/in/jack-ryan-3b8481262" target="_blank" rel="noreferrer" >
+                            <FontAwesomeIcon icon={faLinkedin} />
                         </a>
                     </div>
                     <div className="x1 ContactIcon ">
