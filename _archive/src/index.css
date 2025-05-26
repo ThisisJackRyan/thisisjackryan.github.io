@@ -1,0 +1,745 @@
+ body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen','Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-size: 16px;
+ 
+  background: linear-gradient(to left, #434343 0%, black 100%);
+  color:white;
+}
+
+
+.flex{display: flex;}
+.flex.right{justify-content: right;}
+.flex.center{justify-content: center;}
+.flex.left{justify-content: left;}
+.flex.top{align-items: start;}
+.flex.middle{align-items: center};
+.flex.bottom{align-items: end;}
+
+.flex-column{
+  display: flex;
+  flex-direction: column;
+}
+.flex-reverse-column{
+  display: flex;
+  flex-direction: column-reverse;
+}
+
+
+.x1{flex:1;}
+.x2{flex:2;}
+.x3{flex:3;}
+.x4{flex:4;}
+.x5{flex:5;}
+.x6{flex:6;}
+.x7{flex:7;}
+.x8{flex:8;}
+
+.container{
+  max-width: 1500px;
+  padding-top: 120px;
+  position: relative;
+  z-index: 0;
+}
+
+img{
+  width: 100%;
+}
+
+
+
+
+
+/*Header.js*/
+.nav{
+  justify-content: space-evenly;
+  align-items: center;
+  transition: all ease 0.3s;
+
+}
+
+.header{
+  background-color: rgba(34, 34, 57, .5);
+  font-family: "Lucida Console", "Courier New", monospace;
+  position: fixed;
+  width: 100%;
+  z-index: 1;
+}
+
+.myHeaderLogo{
+  margin-left:0.25em;
+  font-family: Play;
+  font-size: 5em;
+}
+
+.myHeaderLogo #Right{
+  margin-left:-12px;
+}
+
+.headerTitle{
+  align-items: center;
+  justify-content: center;
+  
+}
+
+.link{
+  color:white;
+  text-decoration: none;
+}
+
+.link:hover{ 
+  color:white;
+  border-bottom: solid white 2px;
+}
+
+.hamburger{
+  display: none;
+}
+.big{
+  display: none;
+}
+.go{
+  display:none
+}
+
+
+
+
+
+
+
+/*Home*/
+@font-face {
+  font-family: Play;
+  src: url("../public/Play/Play-Regular.ttf") format("opentype");
+}
+
+@font-face {
+font-family: PlayBold;
+font-weight: bold;
+src: url("../public/Play/Play-Bold.ttf") format("opentype");
+}
+
+
+.article{
+justify-content: center;
+align-items: center;
+}
+
+.nameTitle{
+font-size: 8em;
+justify-content: center;
+align-items: center;
+text-shadow: 5px 5px gray;
+font-family: Play;
+color:white;
+
+}
+
+.nameTitle>span{
+border-bottom: dotted gray 3px;
+padding: 0px;
+margin-bottom: 25px;
+}
+
+.add850{
+  display: none;
+}
+.quickDescription{
+  border:solid gray 2px;
+  border-radius: 5px;
+  text-align: center;
+  font-size: 2em;
+  margin:2%;
+  color: white;
+  background-color: rgba(0,0,0,.7);
+  
+  
+}
+
+.homePicture{
+  border: solid gray 2px;
+  border-radius: 5px;
+  margin:2%;
+}
+.homePicture img{
+  width:100%;
+}
+
+
+
+
+
+
+
+/*GoFundMe*/
+#gofundmelink {
+  font-size: 4em;
+  justify-content: center;
+}
+#gofundmelink a{
+  color: white;
+  transition: all ease 0.5s;
+  margin-bottom:2px;
+  text-decoration: none;
+  padding-bottom: 0px;
+  border-bottom: solid white 2px;
+}
+
+#gofundmelink a:hover{
+  transform: scale(.75);
+  margin-bottom: 0px;
+}
+
+
+
+/*Projects.jsx*/
+
+
+.LinkToGit a {
+  color:white;
+  text-decoration: none;
+}
+
+.LinkToGit a span, .LinkToGit span{
+  border-bottom: solid white 2px;
+  padding-bottom: 1px;
+}
+
+.LinkToGit :hover{
+  color:gray;
+  border-color: gray;
+}
+
+.ProjectTitle{
+  font-family: Play;
+  font-size: 3em;
+  text-align: center;
+}
+
+.TitleOfProject{
+  display: flex;
+  justify-content: center;
+  font-family: Play;
+  font-size: 2.5em;
+  text-align: center;
+  
+  
+  
+}
+.TitleOfProject a{
+  transition: all ease 0.5s;
+}
+
+.TitleOfProject a:hover{
+  transform: translateY(-5px);
+}
+
+
+.break1200Projectx3{
+  margin-left: 8em;
+}
+
+.projectImage{
+  display:flex;
+  align-items: center;
+  justify-content: center;
+}
+.ReadMe, .ReadMore{
+  font-family: "Lucida Console", "Courier New", monospace;
+  margin:3em;
+  text-align: center;
+  font-size: 1em;
+  border:solid gray 2px;
+  border-radius: 5px;
+  background-color: rgba(0,0,0,.7);
+  padding: 1em;
+  transition: all ease 0.5s;
+  box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.3);
+ 
+}
+.close{
+  display: none;
+}
+.ON{
+  display:none;
+}
+
+.ReadMe:hover, .ReadMore:hover {
+  transform: translateY(-10px);
+  box-shadow: 0px 20px 40px rgba(0, 0, 0, 0.75);
+}
+
+.ReadMore{
+  display: none;
+}
+
+
+
+.projectSection{
+  padding: 1em;
+  margin-bottom:2em;
+}
+
+.borderBottomProject{
+  margin-right: 10em;
+  margin-left: 10em;
+  margin-top:1em;
+  border-bottom: dashed gray .15em;
+}
+
+.highlights{
+  font-family: "Lucida Console", "Courier New", monospace;
+  font-size: 2em;
+  margin-bottom: 2em;
+}
+.highlights span{
+  border-bottom:solid gray 2px;
+}
+.Languages{
+  text-align: center;
+  margin-bottom: 3em;
+}
+
+
+.Language{
+  margin:1em;
+  display:flex;
+  justify-content: center;
+}
+
+.Language a{
+  font-family: "Lucida Console", "Courier New", monospace;
+  text-decoration: none;
+  color:white;
+  font-size: 2em;
+}
+
+.Language a:hover{
+  color:gray;
+}
+
+.LanguageImage{
+  margin: 3em;
+  width: 150px;
+  height: 150px;
+  overflow: hidden;
+  border-radius:50%;
+  transition: all ease 0.5s;
+  
+}
+
+
+
+.LanguageImage:hover{
+  transform: translateY(-10px);
+  box-shadow: 0px 20px 40px rgba(0, 0, 0, 0.75);
+  cursor: pointer;
+}
+
+
+
+
+/*Contact.jsx*/ 
+/*Contact Icons and title*/
+.ContactTitle{
+  font-family: Play;
+  font-size: 3em;
+  text-align: center;
+  display:flex;
+  justify-content: center;
+  align-items: center;
+  
+}
+.ContactTitle span{
+  border-bottom: solid gray 2px;
+}
+.ContactLinkSection{
+  margin: 3em;
+}
+.ContactIcon{
+  display: flex;
+  justify-content: center;
+}
+.ContactIcon a, .ContactIcon div{
+  color:white;
+  font-size: 2em;
+  filter: drop-shadow(0px 20px 40px rgba(255, 255, 255, 1));
+  transition: all ease 0.25s;
+}
+
+.ContactIcon a:hover, .ContactIcon div:hover{
+  transform: scale(0.85);
+  filter: drop-shadow(0px 20px 40px rgba(0, 0, 0, 1));
+  cursor: pointer;
+}
+
+.ContactIcon a svg, .ContactIcon div svg{
+  height: 100%;
+}
+
+
+
+/*transition of contact ME */
+/*-- Transition exit--*/
+.transition-exit{
+  opacity: 0;
+}
+.transition-exit-active{
+  opacity: 1;
+  transition: opacity 500ms;
+}
+.transition-exit-done{
+  opacity: 1;
+}
+.transition-enter{
+  opacity: 1;
+}
+/*-- Transition Enter--*/
+.transition-enter-active{
+  opacity: 0;
+  transition: opacity 500ms;
+}
+.transition-enter-done{
+  opacity: 0;
+}
+/*--Transition Appear --*/
+.transition-appear{
+  opacity: 0;
+}
+
+
+
+/*-- Contact Me form --*/
+.ContactMe{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.ContactMe > form{
+  font-family: "Lucida Console", "Courier New", monospace;
+  margin:3em;
+  text-align: center;
+  font-size: 1em;
+  border:solid gray 2px;
+  border-radius: 5px;
+  background-color: rgba(0,0,0,.7);
+  padding: 1em;
+  transition: all ease 0.5s;
+  box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.3);
+}
+.ContactMe .input{
+  margin:1em;
+}
+.ContactMe input, .ContactMe textarea{
+  background-color: gray;
+}
+
+/*Styling the place holder!*/
+::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+  color: rgb(66, 66, 66);
+  opacity: 1; /* Firefox */
+}
+
+:-ms-input-placeholder { /* Internet Explorer 10-11 */
+  color: rgb(66, 66, 66);
+}
+
+::-ms-input-placeholder { /* Microsoft Edge */
+  color: rgb(66, 66, 66);
+}
+
+
+
+.name, .email{
+  flex:1;
+}
+.name input, .email input, .message textarea{
+  border:none;
+  transition: all ease 0.5s;
+  border-radius: 2px;
+  padding: 2px;
+  padding-left:3px;
+}
+.name input:focus, .email input:focus, .message textarea:focus{
+  outline-style: solid;
+  outline-color: black;
+  outline-width: 2px;
+  box-shadow: 0px 20px 40px rgba(0, 0, 0, 0.7);
+  transform: translateY(-10px);
+}
+.name span, .email span, .message span{
+  text-decoration: underline white;
+  padding-bottom: 0.25em;
+  transition: all ease-in 0.5s;
+}
+.name input:focus + span, .email input:focus + span, .message textarea:focus + span{
+  transform: translateY(-10px);
+}
+
+.message textarea{
+  width:100%;
+  height:10em;
+}
+
+.btn-send{
+    background-color: gray;
+}
+
+
+
+
+
+
+
+/*-- Break points -- */
+
+
+@media screen and (max-width: 1200px){
+  /*Break Point Project.jsx*/
+  .break1200Project{
+    flex-direction: column;
+  }
+  .break1200Projectx3{
+    display: none;
+  }
+
+  /*Break Point Home.jsx*/
+  .article {
+    position: relative;
+  }
+  .article .info{
+    position: absolute;
+    z-index: 1;
+    bottom: 0;
+    left: 0;
+    right:0;
+    top:0;
+
+  }
+  .quickDescription{
+    margin: 2em;
+    margin-top: 11em;
+  }
+  .homePicture{
+    position: absolute;
+    z-index: -1;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right:0;
+    max-height: 62.5em;
+    min-height: 50em;
+    overflow: hidden;
+  }
+  
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media screen and (max-width: 850px){
+  /*Break Point Header.jsx */
+  .big{
+    display: flex;
+  }
+  .nav{
+    display: none;
+  }
+  .nav-smashed{
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top:0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    height: 100dvh;
+    background-color: rgba(34, 34, 57, .95);
+    justify-content: center;
+    align-items: center;
+    font-size: 2em;
+    gap: 1em;
+  }
+
+  .hamburger{
+    display: flex;
+    flex: 2;
+    position: absolute;
+    right:0;
+    bottom: 0;
+    top:0;
+    justify-content: right;
+    align-items: center;
+    font-size: 2em;
+    padding: 1em;  
+  }
+  .go{
+    display:flex;
+  }
+  /*Break Point Project.jsx*/
+  .ReadMe{
+    display: none;
+  }
+  .ReadMore{
+    display: flex;
+    margin:1em;
+  }
+  .ReadMeOn{
+    display: flex;
+    margin:1em;
+  }
+  .ON{
+    display: none;
+  }
+  .close{
+    display: flex;
+    color: lightgray;
+    padding:0px;
+    margin:0px;
+    
+  }
+
+  /*Break Point Contact.jsx*/
+  .ContactLinkSection{
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap:2em;
+    
+  }
+  .ContactIcon {
+    padding:2em;
+    justify-content: left;
+  }
+  .ContactIcon a svg, .ContactIcon div svg{
+    position: relative;
+    left:-.65em;
+    right:0;
+    bottom: 0;
+    top:0
+    
+  }
+  /*ContactME*/
+
+
+
+
+  /*Break Point Home.jsx*/
+  
+  .article {
+    position: relative;
+    flex-direction: column;
+  }
+  .article .info{
+    position: relative;
+    display: flex;
+    flex-direction: column-reverse;
+  }
+  .nameTitle{
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    font-size: 4.25em;
+    gap:1rem
+    
+    
+  }
+  .nameTitle>span{
+    border: none;
+    margin-left: 1rem;
+  }
+  .Jack, .Ryan{
+    display: block;
+  }
+  .quickDescription{
+    margin: 0;
+    font-size: 1em;
+  }
+  .add850{
+    display: flex;
+  }
+  .cut850{
+    display: none;
+  }
+  .homePicture.add850{
+    position: relative;
+    min-height: 0;
+    max-width:25rem;
+    max-height:25rem;
+    width: auto;
+    height: auto;
+    justify-content: right;
+  }
+  .homePicture.add850 img{
+    object-fit: cover;
+    height: 100%;
+ }
+
+}
+
+@media screen and (max-width:550px){
+  /*Contact*/
+  .NameEmail{
+    flex-direction: column;
+  }
+  .ContactMe > form{
+    margin: 0;
+    padding:0.25em
+   }
+   .message textarea{
+    max-width:40em;
+    min-width: 19em;
+    height: 10em;
+   }
+
+   /*goFundMe*/
+   #gofundmelink{
+    font-size: 2em;
+   }
+
+}
+
+
+@media screen and (max-width:365px){
+  /*header*/
+  .headerTitle{
+    display: none;
+  }
+  /*home*/
+  .nameTitle{
+    flex-direction: column;
+  }
+  .Jack, .Ryan{
+    display: block;
+  }
+
+  /*Contact*/
+  .ContactMe .input{
+    margin-left:0.1em;
+    margin-right:0.5em;
+   }
+   .message textarea{
+    max-width:40em;
+    min-width: 15em;
+    height: 10em;
+   }
+}
+
+
