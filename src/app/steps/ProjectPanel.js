@@ -1,4 +1,5 @@
 import React from 'react';
+import Image from 'next/image';
 
 function ProjectPanel() {
     return (
@@ -8,8 +9,8 @@ function ProjectPanel() {
                     <h2 className='pb-4 text-xl text-center'>Projects</h2>
                     <p>I&#39;m always working on something — whether it&#39;s a side project, a school assignment, or something for work. It&#39;s rare that a day goes by where I&#39;m not coding. While I&#39;m still exploring and figuring out my niche in the world of software, web development has been my main focus so far, thanks to both work and personal projects. That said, I do enjoy diving into other areas of software whenever I get the chance.</p>
                 </div>
-                <div className='flex-1/2'>
-
+                <div className='flex-1/2 my-12 flex justify-center items-center'>
+                    <Image src='/projects.png' width={500} height={300} className='rounded'/>
                 </div>
             </div>
         </div>
