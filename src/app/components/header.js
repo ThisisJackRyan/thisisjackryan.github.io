@@ -2,7 +2,7 @@ import React from 'react';
 import Link from 'next/link';
 
 const Header = () => (
-    <div className='flex justify-between items-center px-8 py-4'>
+    <div className='fixed w-full flex justify-between items-center px-8 py-4'>
         <div>
             <Link href="/">Thisisjackryan</Link>
         </div>

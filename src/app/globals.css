@@ -5,12 +5,9 @@
     --foreground: #ededed;
 }
 
-body {
+html, body{
+  height: 100dvh;
   background: var(--background);
   color: var(--foreground);
   font-family: "Lucida Console", "Courier New", monospace;
-}
-
-.background-gradient {
-  background: linear-gradient(#000000 0%, #000000 30%, #515151 80%, #ffffff 100%);
 }

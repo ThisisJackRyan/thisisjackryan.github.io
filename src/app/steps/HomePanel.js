@@ -2,7 +2,7 @@ import React from 'react';
 
 export default function HomePanel() {
     return (
-        <div id="Home" className="flex justify-center items-center h-dvh">
+        <div id="Home" className="flex justify-center items-center h-dvh snap-start">
         <div className="space-y-16 max-w-md w-full">
           <div className="flex justify-between h-12">
             <div className="border-l-4 border-t-4 w-12"></div>

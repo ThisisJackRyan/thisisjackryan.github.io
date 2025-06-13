@@ -6,7 +6,7 @@ import ContactPanel from "./steps/ContactPanel";
 
 export default function Home() {
   return (
-    <div className="h-full background-gradient space-y-16">
+    <div className="h-dvh overflow-y-scroll snap-y snap-mandatory scroll-smooth [&::-webkit-scrollbar]:hidden [-ms-overflow-style:'none'] [scrollbar-width:'none']">
       <HomePanel />
 
       <ProjectPanel />
