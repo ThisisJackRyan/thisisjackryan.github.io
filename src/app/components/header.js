@@ -8,8 +8,8 @@ const Header = () => (
         </div>
         <div>
             <div className="flex justify-around items-center gap-6">
-                <Link href="#projects">Projects</Link>
-                <Link href="#outdoors">Outdoors</Link>
+                <Link href="#project">Projects</Link>
+                <Link href="#outdoor">Outdoors</Link>
                 <Link href="#contact">Contact</Link>
             </div>
         </div>

@@ -6,7 +6,7 @@ import ContactPanel from "./steps/ContactPanel";
 
 export default function Home() {
   return (
-    <div className="h-full">
+    <div className="h-full background-gradient space-y-16">
       <HomePanel />
 
       <ProjectPanel />
