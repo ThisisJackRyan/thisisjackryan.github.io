@@ -13,7 +13,7 @@ export default function ContactPanel() {
                 <div className="flex-1/2 my-12 p-4 ml-12">
                     <h2 className="pb-4 text-xl text-center">Get in Touch</h2>
                     <p className="text-xl mb-8">
-                        I'm always up for a chat — whether you have a question, just want to say hi, or just feel like lurking on my LinkedIn and GitHub. I'm an open book. Go ahead, snoop away!
+                        I&apos;m always up for a chat — whether you have a question, just want to say hi, or just feel like lurking on my LinkedIn and GitHub. I&apos;m an open book. Go ahead, snoop away!
                     </p>
                     <div className="space-y-12">
                         <Link href="https://github.com/thisisjackryan" target="_blank" className="flex items-center space-x-4">
