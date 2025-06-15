@@ -4,8 +4,8 @@ import Link from 'next/link';
 
 function ProjectPanel() {
     return (
-        <div id='project' className='h-dvh snap-start flex flex-col justify-around border-t md:mx-16'>
-            <div className='flex justify-center max-w-full '>
+        <div id='project' className='h-dvh snap-start flex flex-col justify-around border-t md:mx-16 max-w-full'>
+            <div className='flex justify-center'>
                 <div className='flex-1/2 mt-12  p-4 md:pr-8 md:ml-12 lg:border-r'>
                     <h2 className='pb-4 text-xl text-center'>Projects</h2>
                     <p className='text-sm md:text-xl'>I&#39;m always working on something — whether it&#39;s a side project, a school assignment, or something for work. It&#39;s rare that a day goes by where I&#39;m not coding. </p>
