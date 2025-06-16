@@ -15,7 +15,7 @@ function OutdoorPanel() {
                         alt="outdoor representation"
                         priority
                         />
-                        <Image 
+                    <Image 
                         src='/panels/outdoors-small.png' 
                         width={500} 
                         height={300} 
