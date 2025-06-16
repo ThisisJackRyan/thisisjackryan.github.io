@@ -13,7 +13,7 @@ function ProjectPanel() {
                     <p className='text-sm md:text-xl'>While I&#39;m still exploring and figuring out my niche in the world of software, web development has been my main focus so far, thanks to both work and personal projects. That said, I do enjoy diving into other areas of software whenever I get the chance.</p>
                     <div className='flex justify-center items-center m-8 relative group'>
                         {/* TODO: change this href to /projects */}
-                        <Link href="#project" className='bg-stone-900 border rounded-4xl px-8 py-4 text-white hover:bg-stone-700'>
+                        <Link href="#project" className='bg-stone-900 border text-center rounded-4xl px-8 py-4 text-white hover:bg-stone-700'>
                             Check out my Projects
                         </Link>
                         <div className='absolute -top-8 left-1/2 transform -translate-x-1/2 bg-black text-white px-4 py-2 rounded opacity-0 group-hover:opacity-100 transition-opacity duration-200'>

@@ -31,8 +31,8 @@ export default function ContactPanel() {
                     </div>
                 </div>
                 <div className="flex-1/2x px-4 pt-4 flex justify-center items-center md:border-l">
-                    <Image src="/panels/contactMe.png" width={500} height={300} className='hidden md:block rounded-lg' alt="contact representation"/>
-                    <Image src="/panels/contactMe-smaller.png" width={500} height={300} className='rounded-lg md:hidden' alt="contact representation"/>
+                    <Image src="/panels/contactMe.png" width={500} height={300} className='hidden md:block rounded-lg' alt="contact representation" priority/>
+                    <Image src="/panels/contactMe-smaller.png" width={500} height={300} className='rounded-lg md:hidden' alt="contact representation" priority/>
                 </div>
             </div>
         </div>
