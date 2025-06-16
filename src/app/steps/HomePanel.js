@@ -8,11 +8,11 @@ export default function HomePanel() {
             <div className="border-l-4 border-t-4 w-12"></div>
             <div className="border-r-4 border-t-4 w-12"></div>
           </div>
-          <div className="flex flex-col justify-center items-right mx-12 text-lg">
+          <div className="flex flex-col justify-center items-right mx-3 sm:mx-12 text-lg">
             <p className="pb-4">Oh Hey There...</p>
             <p>Jack here. I&#39;m a</p>
             <p>aspiring Software&nbsp;Engineer,</p>
-            <p>part-time outdoor enthusiast,</p>
+            <p>part-time outdoor&nbsp;enthusiast,</p>
             <p>full-time student,</p>
             <p>and lifetime tinkerer.</p>
           </div>
