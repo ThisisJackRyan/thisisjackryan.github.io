@@ -8,8 +8,8 @@ import { faEnvelope } from '@fortawesome/free-solid-svg-icons';
 
 export default function ContactPanel() {
     return (
-        <div id="contact" className="h-full snap-start border-t ">
-            <div className="flex flex-col md:flex-row justify-center md:mx-16 my-12 ">
+        <div id="contact" className="h-full snap-start border-t md:mx-16 my-12 ">
+            <div className="flex flex-col md:flex-row justify-center mt-8 md:mt-12">
                 <div className="flex-1/2 p-4 md:ml-12">
                     <h2 className="pb-4 text-xl text-center">Get in Touch</h2>
                     <p className="text-sm md:text-xl mb-8">
@@ -30,9 +30,9 @@ export default function ContactPanel() {
                         </Link>
                     </div>
                 </div>
-                <div className="flex-1/2x px-4 pt-4 flex justify-center items-center md:border-l">
+                <div className="flex-1/2x px-8 flex justify-center items-center md:border-l">
                     <Image src="/panels/contactMe.png" width={500} height={300} className='hidden md:block rounded-lg' alt="contact representation" priority/>
-                    <Image src="/panels/contactMe-smaller.png" width={500} height={300} className='rounded-lg md:hidden' alt="contact representation" priority/>
+                    <Image src="/panels/contactMe-smaller.png" width={500} height={300} className='rounded-lg md:hidden mt-4' alt="contact representation" priority/>
                 </div>
             </div>
         </div>
