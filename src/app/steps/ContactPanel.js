@@ -30,7 +30,7 @@ export default function ContactPanel() {
                         </Link>
                     </div>
                 </div>
-                <div className="flex-1/2x px-8 flex justify-center items-center md:border-l">
+                <div className="flex-1/2 px-8 flex justify-center items-center md:border-l">
                     <Image src="/panels/contactMe.png" width={500} height={300} className='hidden md:block rounded-lg' alt="contact representation" priority/>
                     <Image src="/panels/contactMe-smaller.png" width={500} height={300} className='rounded-lg md:hidden mt-4' alt="contact representation" priority/>
                 </div>
