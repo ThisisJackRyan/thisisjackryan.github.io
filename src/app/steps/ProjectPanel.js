@@ -1,6 +1,7 @@
 import React from 'react';
 import Image from 'next/image';
 import Link from 'next/link';
+import Button from '../components/button';
 
 function ProjectPanel() {
     return (
@@ -13,9 +14,7 @@ function ProjectPanel() {
                     <p className='text-sm md:text-xl'>While I&#39;m still exploring and figuring out my niche in the world of software, web development has been my main focus so far, thanks to both work and personal projects. That said, I do enjoy diving into other areas of software whenever I get the chance.</p>
                     <div className='flex justify-center items-center m-8 relative group'>
                         {/* TODO: change this href to /projects */}
-                        <Link href="https://github.com/ThisisJackRyan" className='bg-stone-900 border text-center rounded-4xl px-8 py-4 text-white hover:bg-stone-700'>
-                            Check out my Projects
-                        </Link>
+                        <Button href="https://github.com/ThisisJackRyan">Check out my Projects</Button>
                     </div>
                    
                 </div>

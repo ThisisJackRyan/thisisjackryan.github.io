@@ -1,6 +1,6 @@
 import React from 'react';
-import Link from 'next/link';
 import Image from 'next/image';
+import Button from '../components/button';
 
 function OutdoorPanel() {
     return (
@@ -31,9 +31,7 @@ function OutdoorPanel() {
                     <p className='text-sm md:text-xl'>While life often gets in the way of my time outdoors, I have so many adventures to live. Now, I&apos;m finally starting to learn how to prioritize them and plan on sharing them with you. </p>
                     <div className='flex justify-center items-center my-4 md:m-8 relative group'>
                         {/* TODO: change this href to /outdoors */}
-                        <Link href="#outdoor" className='bg-stone-900 border rounded-4xl px-4 py-2 md:px-8 md:py-4 text-center text-white hover:bg-stone-700'>
-                            Explore Outdoor Adventures
-                        </Link>
+                        <Button href="#outdoor">Explore Outdoor Adventures</Button>
                         <div className='absolute -top-8 left-1/2 transform -translate-x-1/2 bg-black text-white px-4 py-2 rounded opacity-0 group-hover:opacity-100 transition-opacity duration-200'>
                             Coming Soon
                         </div>
