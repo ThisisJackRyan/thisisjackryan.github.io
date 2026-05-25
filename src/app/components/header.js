@@ -1,6 +1,7 @@
 'use client';
 import React, { useState } from 'react';
 import Link from 'next/link';
+import { usePathname } from 'next/navigation';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faBars, faXmark } from '@fortawesome/free-solid-svg-icons';
 import useActiveSection from '../hooks/useActiveSection';
@@ -13,7 +14,10 @@ const NAV = [
 
 const Header = () => {
   const [menuOpen, setMenuOpen] = useState(false);
+  const pathname = usePathname();
+  const isHome = pathname === '/';
   const active = useActiveSection(['home', 'project', 'outdoor', 'contact']);
+  const hrefFor = (id) => (isHome ? `#${id}` : `/#${id}`);
 
   const toggleMenu = () => setMenuOpen(!menuOpen);
 
@@ -22,7 +26,7 @@ const Header = () => {
       <header className="fixed top-0 inset-x-0 z-50">
         <div className="flex justify-between items-center px-6 sm:px-8 py-4 backdrop-blur-md bg-background/60 border-b border-border-soft">
           <Link
-            href="#home"
+            href={hrefFor('home')}
             className="flex items-center gap-2 text-sm group"
           >
             <span className="relative flex items-center justify-center w-2 h-2">
@@ -41,7 +45,7 @@ const Header = () => {
               return (
                 <Link
                   key={item.id}
-                  href={`#${item.id}`}
+                  href={hrefFor(item.id)}
                   className={`relative px-3 py-1.5 transition-colors duration-200 ${
                     isActive ? 'text-foreground' : 'text-muted hover:text-foreground'
                   }`}
@@ -75,7 +79,7 @@ const Header = () => {
           {NAV.map((item, i) => (
             <Link
               key={item.id}
-              href={`#${item.id}`}
+              href={hrefFor(item.id)}
               onClick={() => setMenuOpen(false)}
               className="group text-2xl flex items-baseline gap-4"
             >

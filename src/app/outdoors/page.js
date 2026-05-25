@@ -84,7 +84,7 @@ function AdventureCard({ adventure }) {
       href={`/outdoors/${slug}`}
       className="group block"
     >
-      <div className="relative aspect-[4/3] w-full overflow-hidden rounded-xl border border-border-soft bg-background/40">
+      <div className="relative aspect-[16/10] w-full overflow-hidden rounded-xl border border-border-soft bg-background/40">
         {cover ? (
           <Image
             src={cover}

@@ -1,5 +1,6 @@
 'use client';
 import Link from 'next/link';
+import { usePathname } from 'next/navigation';
 import useActiveSection from '../hooks/useActiveSection';
 
 const SECTIONS = [
@@ -10,7 +11,12 @@ const SECTIONS = [
 ];
 
 export default function SectionIndicator() {
+  const pathname = usePathname();
   const active = useActiveSection(SECTIONS.map((s) => s.id));
+
+  // Only show on the home page — the indicator is tied to the snap-scroll
+  // sections that only exist there.
+  if (pathname !== '/') return null;
 
   return (
     <nav
