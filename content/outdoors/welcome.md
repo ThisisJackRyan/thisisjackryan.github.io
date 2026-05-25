@@ -1,8 +1,9 @@
 ---
 title: Why I'm Writing These Down
 date: 2026-05-25T08:00:00.000Z
-location: Lansing, MI
-summary: A short note on why this page exists, and what to expect from the posts that follow it.
+location: 'Manhattan, KS'
+summary: |
+  Hey yall this is my first one! I am testing out Tina integrations!!!
 draft: false
 ---
 
@@ -16,9 +17,9 @@ So this is where I'm going to keep them.
 
 ## What lives here
 
-- **Trip reports** — where I went, what I carried, what I'd change.
-- **Field notes** — smaller stuff. A morning. A mountain I didn't summit. Gear that surprised me.
-- **Maps and routes**, when I have them worth sharing.
+* **Trip reports** — where I went, what I carried, what I'd change.
+* **Field notes** — smaller stuff. A morning. A mountain I didn't summit. Gear that surprised me.
+* **Maps and routes**, when I have them worth sharing.
 
 Expect this to grow slowly. I'd rather write three good posts a year than thirty rushed ones.
 
