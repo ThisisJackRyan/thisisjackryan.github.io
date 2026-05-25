@@ -77,11 +77,8 @@ function OutdoorPanel() {
           </Reveal>
 
           <Reveal delay={3}>
-            <div className="flex justify-center md:justify-start items-center mt-8 relative group">
-              <Button href="#outdoor">Explore outdoor adventures</Button>
-              <div className="pointer-events-none absolute -top-9 left-1/2 -translate-x-1/2 px-3 py-1 rounded-md border border-border-strong bg-background text-[10px] tracking-[0.2em] uppercase text-muted opacity-0 group-hover:opacity-100 transition-opacity duration-200 whitespace-nowrap">
-                Coming Soon
-              </div>
+            <div className="flex justify-center md:justify-start items-center mt-8">
+              <Button href="/outdoors">Explore field notes</Button>
             </div>
           </Reveal>
         </div>
