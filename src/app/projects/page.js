@@ -1,7 +1,7 @@
 export default function ProjectsPage() {
     return (
-        <div>
+        <main id="main-content" className="px-8 pt-32">
             <h1>Projects</h1>
-        </div>
+        </main>
     );
 }

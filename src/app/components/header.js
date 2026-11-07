@@ -1,47 +1,40 @@
-'use client'
-import React from 'react';
-import Link from 'next/link';
-import { useState } from 'react';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import {faBars, faXmark} from "@fortawesome/free-solid-svg-icons"
+"use client";
 
-const Header = () => {
-    const [menuOpen, setMenuOpen] = useState(false);
+import Link from "next/link";
+import { useRef, useState } from "react";
 
-    const toggleMenu = () => {
-        setMenuOpen(!menuOpen);
-    };
-    return (
-        <>
-            <div className='fixed w-full flex justify-between items-center px-8 py-4 z-50'>
-                <div>
-                    <Link href="#home" >Thisisjackryan</Link>
-                </div>
-                <div>
-                    <div className="hidden sm:flex justify-around items-center gap-6">
-                        <Link href="#project">Projects</Link>
-                        <Link href="#outdoor">Outdoors</Link>
-                        <Link href="#contact">Contact</Link>
-                    </div>
-                    
-                    <div className='flex justify-around items-center sm:hidden'>
-                        <button onClick={toggleMenu} className="text-xl">
-                            {menuOpen ? <FontAwesomeIcon icon={faXmark} /> : <FontAwesomeIcon icon={faBars} />}
-                        </button>
-                    </div>
-                </div>
-            </div>
-            <div 
-                className={`fixed z-40 bg-black flex justify-center items-center top-0 right-0 h-screen w-full transform transition-transform duration-300 ease-in-out sm:hidden ${menuOpen ? 'translate-x-0' : 'translate-x-full'}`}
-            >
-                <div className="flex flex-col items-start p-8 gap-6 mt-16">
-                    <Link href="#project" onClick={() => setMenuOpen(false)} className="text-lg">Projects</Link>
-                    <Link href="#outdoor" onClick={() => setMenuOpen(false)} className="text-lg">Outdoors</Link>
-                    <Link href="#contact" onClick={() => setMenuOpen(false)} className="text-lg">Contact</Link>
-                </div>
-            </div>
-        </>
-    )
-};
+const links = [
+  { href: "/#work", label: "Work with me" },
+  { href: "/#project", label: "Selected work" },
+  { href: "/#outdoor", label: "About" },
+  { href: "/#contact", label: "Contact" },
+];
 
-export default Header;
+export default function Header() {
+  const [menuOpen, setMenuOpen] = useState(false);
+  const toggleRef = useRef(null);
+
+  function handleKeyDown(event) {
+    if (event.key === "Escape" && menuOpen) {
+      setMenuOpen(false);
+      toggleRef.current?.focus();
+    }
+  }
+
+  return (
+    <header onKeyDown={handleKeyDown} className="fixed inset-x-0 top-0 z-50 border-b border-stone-800 bg-[#0a0a0a]/95">
+      <a href="#main-content" className="skip-link">Skip to content</a>
+      <nav aria-label="Main navigation" className="mx-auto flex max-w-7xl flex-wrap items-center justify-between gap-4 px-5 py-5 sm:px-8 lg:px-16">
+        <Link href="/#home" onClick={() => setMenuOpen(false)} className="text-sm">Thisisjackryan</Link>
+        <button ref={toggleRef} type="button" aria-expanded={menuOpen} aria-controls="main-navigation" onClick={() => setMenuOpen(!menuOpen)} className="min-h-11 px-3 text-sm md:hidden">
+          {menuOpen ? "Close" : "Menu"} <span aria-hidden="true">{menuOpen ? "×" : "+"}</span>
+        </button>
+        <ul id="main-navigation" className={`${menuOpen ? "flex" : "hidden"} w-full flex-col gap-2 border-t border-stone-800 pt-4 md:flex md:w-auto md:flex-row md:gap-6 md:border-0 md:pt-0`}>
+          {links.map((link) => (
+            <li key={link.href}><Link href={link.href} onClick={() => setMenuOpen(false)} className="block py-3 text-sm text-stone-300 hover:text-white md:py-1">{link.label}</Link></li>
+          ))}
+        </ul>
+      </nav>
+    </header>
+  );
+}

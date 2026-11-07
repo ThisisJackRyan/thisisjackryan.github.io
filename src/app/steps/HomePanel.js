@@ -1,26 +1,22 @@
-import React from 'react';
-
 export default function HomePanel() {
-    return (
-        <div id="home" className="mx-4 flex justify-center items-center h-dvh snap-start">
-        <div className="space-y-16 max-w-md w-full">
-          <div className="flex justify-between h-12">
-            <div className="border-l-4 border-t-4 w-12"></div>
-            <div className="border-r-4 border-t-4 w-12"></div>
-          </div>
-          <div className="flex flex-col justify-center items-right mx-3 sm:mx-12 text-lg">
-            <p className="pb-4">Oh Hey There...</p>
-            <p>Jack here. I&#39;m a</p>
-            <p>aspiring Software&nbsp;Engineer,</p>
-            <p>part-time outdoor&nbsp;enthusiast,</p>
-            <p>full-time student,</p>
-            <p>and lifetime tinkerer.</p>
-          </div>
-          <div className="flex justify-between gap-56 h-12">
-            <div className="border-l-4 border-b-4 w-12"></div>
-            <div className="border-r-4 border-b-4 w-12"></div>
-          </div>
+  return (
+    <section id="home" aria-labelledby="intro-title" className="panel panel--hero flex items-center justify-center border-0">
+      <div className="corner-frame w-full max-w-2xl px-6 py-12 sm:px-14 sm:py-16">
+        <p className="mb-6 text-stone-400">Oh Hey There...</p>
+        <p className="mb-4 text-stone-300">Jack here.</p>
+        <h1 id="intro-title" className="text-3xl leading-tight sm:text-4xl">
+          You built a tool with AI. Let’s turn it into a product.
+        </h1>
+        <p className="mt-8 max-w-2xl text-base leading-relaxed text-stone-300 sm:text-lg">
+          I’m a software engineer helping founders and business owners turn
+          working prototypes and internal tools into software they can launch,
+          charge for, and maintain.
+        </p>
+        <div className="mt-10 flex flex-wrap items-center gap-6">
+          <a href="#contact" className="button-link">Tell me what you built</a>
+          <a href="#project" className="text-link">See my work <span aria-hidden="true">↗</span></a>
         </div>
       </div>
-    );
+    </section>
+  );
 }
