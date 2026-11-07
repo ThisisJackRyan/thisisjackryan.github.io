@@ -4,7 +4,7 @@ import "./globals.css";
 
 export const metadata = {
   title: "Thisisjackryan",
-  description: "Jack Ryan — aspiring software engineer, outdoor enthusiast, and lifetime tinkerer. I help people turn tools they built with AI into products they can sell.",
+  description: "Jack Ryan — software engineer and consultant, outdoor enthusiast, and lifetime tinkerer. I help people turn tools they built with AI into products they can sell.",
 };
 
 export default function RootLayout({ children }) {

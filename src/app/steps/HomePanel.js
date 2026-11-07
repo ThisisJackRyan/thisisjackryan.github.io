@@ -1,5 +1,4 @@
 import React from 'react';
-import Link from 'next/link';
 
 export default function HomePanel() {
     return (
@@ -12,14 +11,10 @@ export default function HomePanel() {
           <div className="flex flex-col justify-center items-right mx-3 sm:mx-12 text-lg">
             <p className="pb-4">Oh Hey There...</p>
             <p>Jack here. I&#39;m a</p>
-            <p>aspiring Software&nbsp;Engineer,</p>
+            <p>software engineer and consultant,</p>
             <p>part-time outdoor&nbsp;enthusiast,</p>
             <p>full-time student,</p>
             <p>and lifetime tinkerer.</p>
-            <p className="pt-6 text-sm text-stone-400">
-              These days I&#39;m also helping people turn tools they built with AI into products they can sell.{' '}
-              <Link href="#help" className="underline underline-offset-4 hover:text-stone-200">More&nbsp;↓</Link>
-            </p>
           </div>
           <div className="flex justify-between gap-56 h-12">
             <div className="border-l-4 border-b-4 w-12"></div>
