@@ -1,8 +1,9 @@
-import Image from "next/image";
 import HomePanel from "./steps/HomePanel"
 import ProjectPanel from "./steps/ProjectPanel";
 import OutdoorPanel from "./steps/OutdoorPanel";
 import ContactPanel from "./steps/ContactPanel";
+import LatelyPanel from "./steps/LatelyPanel";
+import HelpPanel from "./steps/HelpPanel";
 
 export default function Home() {
   return (
@@ -10,6 +11,10 @@ export default function Home() {
       <HomePanel />
 
       <ProjectPanel />
+
+      <LatelyPanel />
+
+      <HelpPanel />
 
       <OutdoorPanel />
 

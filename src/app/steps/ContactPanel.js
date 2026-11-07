@@ -15,6 +15,9 @@ export default function ContactPanel() {
                     <p className="text-sm md:text-xl mb-8">
                         I&apos;m always up for a chat — whether you have a question, just want to say hi, or just feel like lurking on my LinkedIn and GitHub. I&apos;m an open book. Go ahead, snoop away!
                     </p>
+                    <p className="text-sm md:text-xl mb-8">
+                        And if you&apos;ve got a tool you built with AI that you&apos;d like to turn into something you can sell, I&apos;d love to hear about it.
+                    </p>
                     <div className="flex justify-around items-center md:block md:space-y-12 md:pl-4 ">
                         <Link href="https://github.com/thisisjackryan" target="_blank" className="flex items-center space-x-4">
                             <FontAwesomeIcon icon={faGithub} className="text-4xl hover:text-stone-400" />
