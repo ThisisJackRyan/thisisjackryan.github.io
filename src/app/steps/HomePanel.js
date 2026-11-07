@@ -3,15 +3,15 @@ import React from 'react';
 export default function HomePanel() {
     return (
         <div id="home" className="mx-4 flex justify-center items-center h-dvh snap-start">
-        <div className="space-y-16 max-w-md w-full">
+        <div className="space-y-16 max-w-lg w-full">
           <div className="flex justify-between h-12">
             <div className="border-l-4 border-t-4 w-12"></div>
             <div className="border-r-4 border-t-4 w-12"></div>
           </div>
-          <div className="flex flex-col justify-center items-right mx-3 sm:mx-12 text-lg">
+          <div className="flex flex-col justify-center items-start mx-3 sm:mx-12 text-[clamp(0.8rem,3.5vw,1.125rem)]">
             <p className="pb-4">Oh Hey There...</p>
             <p>Jack here. I&#39;m a</p>
-            <p>software engineer and consultant,</p>
+            <p className="whitespace-nowrap">software engineer and consultant,</p>
             <p>part-time outdoor&nbsp;enthusiast,</p>
             <p>full-time student,</p>
             <p>and lifetime tinkerer.</p>
