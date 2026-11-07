@@ -1,92 +1,13 @@
 @import "tailwindcss";
 
 :root {
-  --background: #0a0a0a;
-  --foreground: #ededed;
+    --background: #0a0a0a;
+    --foreground: #ededed;
 }
 
-html {
-  scroll-behavior: smooth;
-  scroll-padding-top: 6rem;
-}
-
-body {
-  min-height: 100dvh;
+html, body{
+  height: 100dvh;
   background: var(--background);
   color: var(--foreground);
   font-family: "Lucida Console", "Courier New", monospace;
-}
-
-@layer components {
-  .panel {
-    min-height: 85svh;
-    padding-block: 6rem;
-    border-top: 1px solid #44403c;
-  }
-
-  .panel--hero {
-    min-height: 100svh;
-    padding-top: 9rem;
-    border-top: 0;
-  }
-
-  .section-title {
-    font-size: clamp(1.65rem, 3vw, 2.5rem);
-    line-height: 1.25;
-  }
-
-  .eyebrow {
-    margin-bottom: 1.5rem;
-    color: #a8a29e;
-    font-size: 0.875rem;
-  }
-
-  .button-link {
-    display: inline-flex;
-    align-items: center;
-    justify-content: center;
-    gap: 0.75rem;
-    border: 1px solid #a8a29e;
-    border-radius: 2rem;
-    padding: 1rem 1.5rem;
-    background: #1c1917;
-    color: white;
-    font-size: 0.875rem;
-    text-align: center;
-  }
-
-  .button-link:hover { background: #44403c; }
-  .text-link { text-decoration: underline; text-underline-offset: 5px; }
-  .text-link:hover { color: #fff; }
-}
-
-.corner-frame {
-  background:
-    linear-gradient(#ededed, #ededed) left top / 3rem 3px,
-    linear-gradient(#ededed, #ededed) left top / 3px 3rem,
-    linear-gradient(#ededed, #ededed) right top / 3rem 3px,
-    linear-gradient(#ededed, #ededed) right top / 3px 3rem,
-    linear-gradient(#ededed, #ededed) left bottom / 3rem 3px,
-    linear-gradient(#ededed, #ededed) left bottom / 3px 3rem,
-    linear-gradient(#ededed, #ededed) right bottom / 3rem 3px,
-    linear-gradient(#ededed, #ededed) right bottom / 3px 3rem;
-  background-repeat: no-repeat;
-}
-
-:focus-visible {
-  outline: 2px solid #ededed;
-  outline-offset: 6px;
-}
-
-.skip-link {
-  position: absolute;
-  top: -10rem;
-  left: 1rem;
-  padding: 1rem;
-  background: #0a0a0a;
-}
-.skip-link:focus { top: 1rem; }
-
-@media (prefers-reduced-motion: reduce) {
-  html { scroll-behavior: auto; }
 }
